@@ -111,7 +111,13 @@
 //    int randomArrayIndex = arc4random() % [self.kalePictureArray count];
 //    [self.breakfastImageView setImage:self.kalePictureArray[randomArrayIndex]];
     
-        NSLog(@"button pressed");
+    //error checking you recommended
+    NSLog(@"button pressed");
+    NSLog(@"value of self.breakfastImageView is %@", self.breakfastImageView);
+    NSLog(@"value of self.breakfastImageView.image is %@", self.breakfastImageView.image);
+    if (self.breakfastImageView == nil) {
+        NSLog(@"self.breakfastImageView is nil");
+    }
     
     
     
