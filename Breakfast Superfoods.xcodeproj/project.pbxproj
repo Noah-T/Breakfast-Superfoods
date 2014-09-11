@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DED7D42219C0D35300AA2AE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED7D42119C0D35300AA2AE0 /* Foundation.framework */; };
+		DED7D42419C0D35300AA2AE0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED7D42319C0D35300AA2AE0 /* CoreGraphics.framework */; };
+		DED7D42619C0D35300AA2AE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED7D42519C0D35300AA2AE0 /* UIKit.framework */; };
+		DED7D42C19C0D35300AA2AE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DED7D42A19C0D35300AA2AE0 /* InfoPlist.strings */; };
+		DED7D42E19C0D35300AA2AE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DED7D42D19C0D35300AA2AE0 /* main.m */; };
+		DED7D43219C0D35300AA2AE0 /* NATAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DED7D43119C0D35300AA2AE0 /* NATAppDelegate.m */; };
+		DED7D43419C0D35300AA2AE0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED7D43319C0D35300AA2AE0 /* Images.xcassets */; };
+		DED7D43B19C0D35300AA2AE0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED7D43A19C0D35300AA2AE0 /* XCTest.framework */; };
+		DED7D43C19C0D35300AA2AE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED7D42119C0D35300AA2AE0 /* Foundation.framework */; };
+		DED7D43D19C0D35300AA2AE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED7D42519C0D35300AA2AE0 /* UIKit.framework */; };
+		DED7D44519C0D35300AA2AE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DED7D44319C0D35300AA2AE0 /* InfoPlist.strings */; };
+		DED7D44719C0D35300AA2AE0 /* Breakfast_SuperfoodsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DED7D44619C0D35300AA2AE0 /* Breakfast_SuperfoodsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DED7D43E19C0D35300AA2AE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DED7D41619C0D35300AA2AE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DED7D41D19C0D35300AA2AE0;
+			remoteInfo = "Breakfast Superfoods";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DED7D41E19C0D35300AA2AE0 /* Breakfast Superfoods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Breakfast Superfoods.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DED7D42119C0D35300AA2AE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DED7D42319C0D35300AA2AE0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DED7D42519C0D35300AA2AE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DED7D42919C0D35300AA2AE0 /* Breakfast Superfoods-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Breakfast Superfoods-Info.plist"; sourceTree = "<group>"; };
+		DED7D42B19C0D35300AA2AE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DED7D42D19C0D35300AA2AE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DED7D42F19C0D35300AA2AE0 /* Breakfast Superfoods-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Breakfast Superfoods-Prefix.pch"; sourceTree = "<group>"; };
+		DED7D43019C0D35300AA2AE0 /* NATAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NATAppDelegate.h; sourceTree = "<group>"; };
+		DED7D43119C0D35300AA2AE0 /* NATAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NATAppDelegate.m; sourceTree = "<group>"; };
+		DED7D43319C0D35300AA2AE0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DED7D43919C0D35300AA2AE0 /* Breakfast SuperfoodsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Breakfast SuperfoodsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DED7D43A19C0D35300AA2AE0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DED7D44219C0D35300AA2AE0 /* Breakfast SuperfoodsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Breakfast SuperfoodsTests-Info.plist"; sourceTree = "<group>"; };
+		DED7D44419C0D35300AA2AE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DED7D44619C0D35300AA2AE0 /* Breakfast_SuperfoodsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Breakfast_SuperfoodsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DED7D41B19C0D35300AA2AE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED7D42419C0D35300AA2AE0 /* CoreGraphics.framework in Frameworks */,
+				DED7D42619C0D35300AA2AE0 /* UIKit.framework in Frameworks */,
+				DED7D42219C0D35300AA2AE0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DED7D43619C0D35300AA2AE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED7D43B19C0D35300AA2AE0 /* XCTest.framework in Frameworks */,
+				DED7D43D19C0D35300AA2AE0 /* UIKit.framework in Frameworks */,
+				DED7D43C19C0D35300AA2AE0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DED7D41519C0D35300AA2AE0 = {
+			isa = PBXGroup;
+			children = (
+				DED7D42719C0D35300AA2AE0 /* Breakfast Superfoods */,
+				DED7D44019C0D35300AA2AE0 /* Breakfast SuperfoodsTests */,
+				DED7D42019C0D35300AA2AE0 /* Frameworks */,
+				DED7D41F19C0D35300AA2AE0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DED7D41F19C0D35300AA2AE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DED7D41E19C0D35300AA2AE0 /* Breakfast Superfoods.app */,
+				DED7D43919C0D35300AA2AE0 /* Breakfast SuperfoodsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DED7D42019C0D35300AA2AE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DED7D42119C0D35300AA2AE0 /* Foundation.framework */,
+				DED7D42319C0D35300AA2AE0 /* CoreGraphics.framework */,
+				DED7D42519C0D35300AA2AE0 /* UIKit.framework */,
+				DED7D43A19C0D35300AA2AE0 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DED7D42719C0D35300AA2AE0 /* Breakfast Superfoods */ = {
+			isa = PBXGroup;
+			children = (
+				DED7D43019C0D35300AA2AE0 /* NATAppDelegate.h */,
+				DED7D43119C0D35300AA2AE0 /* NATAppDelegate.m */,
+				DED7D43319C0D35300AA2AE0 /* Images.xcassets */,
+				DED7D42819C0D35300AA2AE0 /* Supporting Files */,
+			);
+			path = "Breakfast Superfoods";
+			sourceTree = "<group>";
+		};
+		DED7D42819C0D35300AA2AE0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DED7D42919C0D35300AA2AE0 /* Breakfast Superfoods-Info.plist */,
+				DED7D42A19C0D35300AA2AE0 /* InfoPlist.strings */,
+				DED7D42D19C0D35300AA2AE0 /* main.m */,
+				DED7D42F19C0D35300AA2AE0 /* Breakfast Superfoods-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DED7D44019C0D35300AA2AE0 /* Breakfast SuperfoodsTests */ = {
+			isa = PBXGroup;
+			children = (
+				DED7D44619C0D35300AA2AE0 /* Breakfast_SuperfoodsTests.m */,
+				DED7D44119C0D35300AA2AE0 /* Supporting Files */,
+			);
+			path = "Breakfast SuperfoodsTests";
+			sourceTree = "<group>";
+		};
+		DED7D44119C0D35300AA2AE0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DED7D44219C0D35300AA2AE0 /* Breakfast SuperfoodsTests-Info.plist */,
+				DED7D44319C0D35300AA2AE0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DED7D41D19C0D35300AA2AE0 /* Breakfast Superfoods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DED7D44A19C0D35300AA2AE0 /* Build configuration list for PBXNativeTarget "Breakfast Superfoods" */;
+			buildPhases = (
+				DED7D41A19C0D35300AA2AE0 /* Sources */,
+				DED7D41B19C0D35300AA2AE0 /* Frameworks */,
+				DED7D41C19C0D35300AA2AE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Breakfast Superfoods";
+			productName = "Breakfast Superfoods";
+			productReference = DED7D41E19C0D35300AA2AE0 /* Breakfast Superfoods.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DED7D43819C0D35300AA2AE0 /* Breakfast SuperfoodsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DED7D44D19C0D35300AA2AE0 /* Build configuration list for PBXNativeTarget "Breakfast SuperfoodsTests" */;
+			buildPhases = (
+				DED7D43519C0D35300AA2AE0 /* Sources */,
+				DED7D43619C0D35300AA2AE0 /* Frameworks */,
+				DED7D43719C0D35300AA2AE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DED7D43F19C0D35300AA2AE0 /* PBXTargetDependency */,
+			);
+			name = "Breakfast SuperfoodsTests";
+			productName = "Breakfast SuperfoodsTests";
+			productReference = DED7D43919C0D35300AA2AE0 /* Breakfast SuperfoodsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DED7D41619C0D35300AA2AE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NAT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Noah Teshu";
+				TargetAttributes = {
+					DED7D43819C0D35300AA2AE0 = {
+						TestTargetID = DED7D41D19C0D35300AA2AE0;
+					};
+				};
+			};
+			buildConfigurationList = DED7D41919C0D35300AA2AE0 /* Build configuration list for PBXProject "Breakfast Superfoods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DED7D41519C0D35300AA2AE0;
+			productRefGroup = DED7D41F19C0D35300AA2AE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DED7D41D19C0D35300AA2AE0 /* Breakfast Superfoods */,
+				DED7D43819C0D35300AA2AE0 /* Breakfast SuperfoodsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DED7D41C19C0D35300AA2AE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED7D42C19C0D35300AA2AE0 /* InfoPlist.strings in Resources */,
+				DED7D43419C0D35300AA2AE0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DED7D43719C0D35300AA2AE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED7D44519C0D35300AA2AE0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DED7D41A19C0D35300AA2AE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED7D43219C0D35300AA2AE0 /* NATAppDelegate.m in Sources */,
+				DED7D42E19C0D35300AA2AE0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DED7D43519C0D35300AA2AE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED7D44719C0D35300AA2AE0 /* Breakfast_SuperfoodsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DED7D43F19C0D35300AA2AE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DED7D41D19C0D35300AA2AE0 /* Breakfast Superfoods */;
+			targetProxy = DED7D43E19C0D35300AA2AE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DED7D42A19C0D35300AA2AE0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DED7D42B19C0D35300AA2AE0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DED7D44319C0D35300AA2AE0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DED7D44419C0D35300AA2AE0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DED7D44819C0D35300AA2AE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DED7D44919C0D35300AA2AE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DED7D44B19C0D35300AA2AE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Breakfast Superfoods/Breakfast Superfoods-Prefix.pch";
+				INFOPLIST_FILE = "Breakfast Superfoods/Breakfast Superfoods-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DED7D44C19C0D35300AA2AE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Breakfast Superfoods/Breakfast Superfoods-Prefix.pch";
+				INFOPLIST_FILE = "Breakfast Superfoods/Breakfast Superfoods-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DED7D44E19C0D35300AA2AE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Breakfast Superfoods.app/Breakfast Superfoods";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Breakfast Superfoods/Breakfast Superfoods-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Breakfast SuperfoodsTests/Breakfast SuperfoodsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DED7D44F19C0D35300AA2AE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Breakfast Superfoods.app/Breakfast Superfoods";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Breakfast Superfoods/Breakfast Superfoods-Prefix.pch";
+				INFOPLIST_FILE = "Breakfast SuperfoodsTests/Breakfast SuperfoodsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DED7D41919C0D35300AA2AE0 /* Build configuration list for PBXProject "Breakfast Superfoods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DED7D44819C0D35300AA2AE0 /* Debug */,
+				DED7D44919C0D35300AA2AE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DED7D44A19C0D35300AA2AE0 /* Build configuration list for PBXNativeTarget "Breakfast Superfoods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DED7D44B19C0D35300AA2AE0 /* Debug */,
+				DED7D44C19C0D35300AA2AE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DED7D44D19C0D35300AA2AE0 /* Build configuration list for PBXNativeTarget "Breakfast SuperfoodsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DED7D44E19C0D35300AA2AE0 /* Debug */,
+				DED7D44F19C0D35300AA2AE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DED7D41619C0D35300AA2AE0 /* Project object */;
+}
