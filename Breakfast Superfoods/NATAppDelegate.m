@@ -12,10 +12,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    UIImage *breakfastImage = [UIImage imageNamed:@"kale1.png"];
-    UIImage *breakfastImage2 = [UIImage imageNamed:@"Kale_raw.png"];
-    UIImage *breakfastImage3 = [UIImage imageNamed:@"kale-benefits-1.png"];
-    NSArray *kalePictureArray = @[breakfastImage, breakfastImage2, breakfastImage3];
+    self.breakfastImage = [UIImage imageNamed:@"kale1.png"];
+    self.breakfastImage2 = [UIImage imageNamed:@"Kale_raw.png"];
+    self.breakfastImage3 = [UIImage imageNamed:@"kale-benefits-1.png"];
+    self.kalePictureArray = @[self.breakfastImage, self.breakfastImage2, self.breakfastImage3];
     
     CGRect mainWindowFrame = [[UIScreen mainScreen] bounds];
     UIWindow *mainWindow = self.window = [[UIWindow alloc] initWithFrame:mainWindowFrame];
@@ -33,19 +33,18 @@
     self.theButton.frame = buttonFrame;
     [self.theButton setTitle:@"Show me something yummy" forState:UIControlStateNormal];
     
-    CGRect breakfastImageFrame = CGRectMake(mainWindowFrame.size.width/2, 200, 200, 200);
+    CGRect breakfastImageFrame = CGRectMake(mainWindowFrame.size.width/2-100, mainWindowFrame.size.height/2-100, 200, 200);
     
-    UIImageView *breakfastImageView = [[UIImageView alloc]initWithFrame:breakfastImageFrame];
-    UIImageView *breakfastImageView2 = [[UIImageView alloc]initWithFrame:breakfastImageFrame];
+    self.breakfastImageView = [[UIImageView alloc]initWithFrame:breakfastImageFrame];
     
-    [breakfastImageView2 setImage:kalePictureArray[1]];
-    [breakfastImageView2 setCenter:CGPointMake(mainWindowFrame.size.width/2, mainWindowFrame.size.height/2)];
+    
 
     
-    [breakfastImageView setImage:kalePictureArray[0]];
-    [breakfastImageView setCenter:CGPointMake(mainWindowFrame.size.width/2, mainWindowFrame.size.height/2)];
-    self.breakfastImage = [[UIView alloc]initWithFrame:breakfastImageFrame];
-    self.breakfastImage.backgroundColor = [UIColor whiteColor];
+    //[self.breakfastImageView setImage:self.kalePictureArray[0]];
+    [self.breakfastImageView setCenter:CGPointMake(mainWindowFrame.size.width/2, 300)];
+    self.breakfastImageView = [[UIImageView alloc]initWithFrame:breakfastImageFrame];
+    self.breakfastImageView.backgroundColor = [UIColor whiteColor];
+    [self.breakfastImageView setImage:self.kalePictureArray[0]];
     
     
     CGRect labelFrame = CGRectMake(400, 300, 150, 50);
@@ -59,7 +58,7 @@
     
     
     [self.window addSubview:self.theButton];
-    [self.window addSubview:breakfastImageView];
+    [self.window addSubview:self.breakfastImageView];
     [self.window addSubview:self.theLabel];
     
     
@@ -100,7 +99,7 @@
 -(void)changeBreakfastImage:(id)sender
 {
     
-    [self.breakfastImageView setImage:self.kalePictureArray[1]];
+    //[self.breakfastImageView setImage:self.kalePictureArray[2]];
     //breakfastImageView is the UIImageView I used to hold the kale picture above
     //I'm attempting to replace the current image by using setImage: and giving it a new value
     //my first priority is to change the image in any way (so I know I can), before getting fancy and trying to randomize it
@@ -108,8 +107,8 @@
     
     
     //once I figure out how to change it, this is the approach I had in mind for randomizing:
-//    int randomArrayIndex = arc4random() % [self.kalePictureArray count];
-//    [self.breakfastImageView setImage:self.kalePictureArray[randomArrayIndex]];
+  int randomArrayIndex = arc4random() % [self.kalePictureArray count];
+    [self.breakfastImageView setImage:self.kalePictureArray[randomArrayIndex]];
     
     //error checking you recommended
     NSLog(@"button pressed");
@@ -118,6 +117,8 @@
     if (self.breakfastImageView == nil) {
         NSLog(@"self.breakfastImageView is nil");
     }
+    
+    NSLog(@" breakfast image is %@", self.breakfastImage);
     
     
     

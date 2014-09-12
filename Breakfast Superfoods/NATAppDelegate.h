@@ -13,12 +13,11 @@
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) UIButton *theButton;
 @property (strong, nonatomic) UILabel *theLabel;
-@property (strong, nonatomic) UIView *breakfastImage;
-@property (strong, nonatomic) UIView *breakfastImage2;
-@property (strong, nonatomic) UIView *breakfastImage3;
+@property (strong, nonatomic) UIImage *breakfastImage;
+@property (strong, nonatomic) UIImage *breakfastImage2;
+@property (strong, nonatomic) UIImage *breakfastImage3;
 @property (strong, nonatomic) NSArray *kalePictureArray;
 @property (strong, nonatomic) UIImageView *breakfastImageView;
-@property (strong, nonatomic) UIImageView *breakfastImageView2;
 @property (nonatomic) CGRect mainWindowFrame;
 
 @end
