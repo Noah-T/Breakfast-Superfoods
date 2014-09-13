@@ -8,6 +8,11 @@
 
 #import "NATAppDelegate.h"
 
+@interface NATAppDelegate ()
+
+
+@end
+
 @implementation NATAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -26,11 +31,14 @@
     [self.window makeKeyAndVisible];
     
     
-    CGRect buttonFrame = CGRectMake(0, 0, mainWindowFrame.size.width, mainWindowFrame.size.height/2);
+    CGRect buttonFrame = CGRectMake(0, 0, 210, 30);
     
     self.theButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    self.theButton.backgroundColor = [UIColor whiteColor];
+    
+    self.theButton.backgroundColor = [UIColor yellowColor];
     self.theButton.frame = buttonFrame;
+    [self.theButton setCenter:CGPointMake(mainWindowFrame.size.width/2, 100)];
+    
     [self.theButton setTitle:@"Show me something yummy" forState:UIControlStateNormal];
     
     CGRect breakfastImageFrame = CGRectMake(mainWindowFrame.size.width/2-100, mainWindowFrame.size.height/2-100, 200, 200);
@@ -40,18 +48,18 @@
     
 
     
-    //[self.breakfastImageView setImage:self.kalePictureArray[0]];
     [self.breakfastImageView setCenter:CGPointMake(mainWindowFrame.size.width/2, 300)];
     self.breakfastImageView = [[UIImageView alloc]initWithFrame:breakfastImageFrame];
     self.breakfastImageView.backgroundColor = [UIColor whiteColor];
-    [self.breakfastImageView setImage:self.kalePictureArray[0]];
+    [self.breakfastImageView setImage:nil];
     
     
-    CGRect labelFrame = CGRectMake(400, 300, 150, 50);
+    
+    CGRect labelFrame = CGRectMake(400, 400, 150, 50);
     self.theLabel = [[UILabel alloc ]initWithFrame:labelFrame];
     self.theLabel.backgroundColor = [UIColor yellowColor];
     self.theLabel.text =@"this is a label";
-    [self.theLabel setCenter:CGPointMake(mainWindowFrame.size.width/2, 400)];
+    [self.theLabel setCenter:CGPointMake(mainWindowFrame.size.width/2, mainWindowFrame.size.height/2+150)];
     [self.theLabel setTextAlignment:NSTextAlignmentCenter];
     
     [self.theButton addTarget:self action:@selector(changeBreakfastImage:) forControlEvents:UIControlEventTouchUpInside];
@@ -99,27 +107,46 @@
 -(void)changeBreakfastImage:(id)sender
 {
     
-    //[self.breakfastImageView setImage:self.kalePictureArray[2]];
-    //breakfastImageView is the UIImageView I used to hold the kale picture above
-    //I'm attempting to replace the current image by using setImage: and giving it a new value
-    //my first priority is to change the image in any way (so I know I can), before getting fancy and trying to randomize it
+    
     
     
     
     //once I figure out how to change it, this is the approach I had in mind for randomizing:
-  int randomArrayIndex = arc4random() % [self.kalePictureArray count];
-    [self.breakfastImageView setImage:self.kalePictureArray[randomArrayIndex]];
-    
-    //error checking you recommended
-    NSLog(@"button pressed");
-    NSLog(@"value of self.breakfastImageView is %@", self.breakfastImageView);
-    NSLog(@"value of self.breakfastImageView.image is %@", self.breakfastImageView.image);
-    if (self.breakfastImageView == nil) {
-        NSLog(@"self.breakfastImageView is nil");
+  int randomArrayIndex = arc4random() % [self.kalePictureArray count]; //arc4random is NOT inclusive!!!
+    if(self.breakfastImageView.image == self.kalePictureArray[randomArrayIndex]){
+        NSLog(@"image didn't change");
+        if(self.breakfastImageView.image == self.kalePictureArray[0]){
+            int increasedArrayIndex = randomArrayIndex +1;
+            [self.breakfastImageView setImage:self.kalePictureArray[increasedArrayIndex]];
+            NSLog(@"this was triggered, alteredArrayIndex %d", increasedArrayIndex );
+        }
+        
+        else if(self.breakfastImageView.image == self.kalePictureArray[[self.kalePictureArray count]-1]){
+            int decreasedArrayIndex = randomArrayIndex -1;
+            [self.breakfastImageView setImage:self.kalePictureArray[decreasedArrayIndex]];
+        }
+        
+        else {
+            int upOrDownRandomizedArrayIndex = arc4random() % 2; //this means up to 2, not inclusive (0 or 1)
+            if(upOrDownRandomizedArrayIndex == 0){
+                int decreasedArrayIndex = randomArrayIndex -1;
+                [self.breakfastImageView setImage:self.kalePictureArray[decreasedArrayIndex]];
+            } else {
+                int increasedArrayIndex = randomArrayIndex +1;
+                [self.breakfastImageView setImage:self.kalePictureArray[increasedArrayIndex]];
+            }
+        }
+        
+        
+        
+        
+    } else {
+        [self.breakfastImageView setImage:self.kalePictureArray[randomArrayIndex]];
+
     }
     
-    NSLog(@" breakfast image is %@", self.breakfastImage);
     
+
     
     
     
