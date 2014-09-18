@@ -9,15 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface NATAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) UIButton *theButton;
-@property (strong, nonatomic) UILabel *theLabel;
-@property (strong, nonatomic) UIImage *breakfastImage;
-@property (strong, nonatomic) UIImage *breakfastImage2;
-@property (strong, nonatomic) UIImage *breakfastImage3;
-@property (strong, nonatomic) NSArray *kalePictureArray;
-@property (strong, nonatomic) UIImageView *breakfastImageView;
-@property (nonatomic) CGRect mainWindowFrame;
+@property (strong, nonatomic) NSArray *breakfastPictureArray;
+@property (strong, nonatomic)UIWindow *window;
 
 @end
