@@ -10,5 +10,6 @@
 
 @interface NATCollectionViewCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *RecipeCellImageView;
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
