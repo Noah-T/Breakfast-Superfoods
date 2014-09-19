@@ -15,15 +15,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
+ /*   self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
     NATRecipeTableViewController *mainViewController = [[NATRecipeTableViewController alloc]init];
     self.window.rootViewController = mainViewController;
     
     self.window.backgroundColor = [UIColor redColor];
     [self.window makeKeyAndVisible];
-    NSLog(@"root view controller has a value of %@", self.window.rootViewController);
+    NSLog(@"root view controller has a value of %@", self.window.rootViewController);*/
     return YES;
-    
+   
     
 }
 

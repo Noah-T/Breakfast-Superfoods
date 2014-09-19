@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE2F119C19CBA12000432CB8 /* NATRecipeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2F119B19CBA12000432CB8 /* NATRecipeCollectionViewController.m */; };
+		DE2F119E19CBA26700432CB8 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE2F119D19CBA26700432CB8 /* Storyboard.storyboard */; };
+		DE2F11A119CBA65D00432CB8 /* NATCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2F11A019CBA65D00432CB8 /* NATCollectionViewCell.m */; };
 		DEC8DB3C19CA893000D70889 /* NATRecipeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC8DB3B19CA893000D70889 /* NATRecipeTableViewController.m */; };
 		DED7D42219C0D35300AA2AE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED7D42119C0D35300AA2AE0 /* Foundation.framework */; };
 		DED7D42419C0D35300AA2AE0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED7D42319C0D35300AA2AE0 /* CoreGraphics.framework */; };
@@ -33,6 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE2F119A19CBA12000432CB8 /* NATRecipeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NATRecipeCollectionViewController.h; sourceTree = "<group>"; };
+		DE2F119B19CBA12000432CB8 /* NATRecipeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NATRecipeCollectionViewController.m; sourceTree = "<group>"; };
+		DE2F119D19CBA26700432CB8 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		DE2F119F19CBA65D00432CB8 /* NATCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NATCollectionViewCell.h; sourceTree = "<group>"; };
+		DE2F11A019CBA65D00432CB8 /* NATCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NATCollectionViewCell.m; sourceTree = "<group>"; };
 		DEC8DB3A19CA893000D70889 /* NATRecipeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NATRecipeTableViewController.h; path = ../NATRecipeTableViewController.h; sourceTree = "<group>"; };
 		DEC8DB3B19CA893000D70889 /* NATRecipeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NATRecipeTableViewController.m; path = ../NATRecipeTableViewController.m; sourceTree = "<group>"; };
 		DED7D41E19C0D35300AA2AE0 /* Breakfast Superfoods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Breakfast Superfoods.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,8 +120,13 @@
 			children = (
 				DED7D43019C0D35300AA2AE0 /* NATAppDelegate.h */,
 				DED7D43119C0D35300AA2AE0 /* NATAppDelegate.m */,
+				DE2F119D19CBA26700432CB8 /* Storyboard.storyboard */,
 				DEC8DB3A19CA893000D70889 /* NATRecipeTableViewController.h */,
 				DEC8DB3B19CA893000D70889 /* NATRecipeTableViewController.m */,
+				DE2F119A19CBA12000432CB8 /* NATRecipeCollectionViewController.h */,
+				DE2F119B19CBA12000432CB8 /* NATRecipeCollectionViewController.m */,
+				DE2F119F19CBA65D00432CB8 /* NATCollectionViewCell.h */,
+				DE2F11A019CBA65D00432CB8 /* NATCollectionViewCell.m */,
 				DED7D43319C0D35300AA2AE0 /* Images.xcassets */,
 				DED7D42819C0D35300AA2AE0 /* Supporting Files */,
 			);
@@ -227,6 +240,7 @@
 			files = (
 				DED7D42C19C0D35300AA2AE0 /* InfoPlist.strings in Resources */,
 				DED7D43419C0D35300AA2AE0 /* Images.xcassets in Resources */,
+				DE2F119E19CBA26700432CB8 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,9 +259,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE2F119C19CBA12000432CB8 /* NATRecipeCollectionViewController.m in Sources */,
 				DEC8DB3C19CA893000D70889 /* NATRecipeTableViewController.m in Sources */,
 				DED7D43219C0D35300AA2AE0 /* NATAppDelegate.m in Sources */,
 				DED7D42E19C0D35300AA2AE0 /* main.m in Sources */,
+				DE2F11A119CBA65D00432CB8 /* NATCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

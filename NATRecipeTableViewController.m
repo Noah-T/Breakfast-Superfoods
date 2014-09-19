@@ -33,15 +33,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    UIImage *auntyPsKaleSalad = [UIImage imageNamed:@"aunty-ps-kale-salad"];
-    UIImage *avocadoBreakfastPudding = [UIImage imageNamed:@"avocado-breakfast-pudding"];
-    UIImage *avocadoBreakfastSalad = [UIImage imageNamed:@"avocado-breakfast-salad"];
-    UIImage *avocadoKaleSalad = [UIImage imageNamed:@"avocado-kale-salad"];
-    UIImage *eggBakedInAvocado = [UIImage imageNamed:@"egg-baked-in-avocado"];
-    UIImage *kaleBananaSmoothie = [UIImage imageNamed:@"kale-banana-smoothie"];
-    UIImage *kaleSaladWithBloodOranges = [UIImage imageNamed:@"kale-salad-with-blood-oranges"];
-    UIImage *tomatoAvocadoToast = [UIImage imageNamed:@"tomato-avocado-toast"];
-    self.breakfastPictureArray = @[auntyPsKaleSalad, avocadoBreakfastPudding, avocadoBreakfastSalad, avocadoKaleSalad, eggBakedInAvocado, kaleBananaSmoothie, kaleSaladWithBloodOranges, tomatoAvocadoToast];
+    
     
     self.tableView.estimatedRowHeight = 75.0f;
 
