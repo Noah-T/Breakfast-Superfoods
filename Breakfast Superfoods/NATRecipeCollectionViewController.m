@@ -8,6 +8,7 @@
 
 #import "NATRecipeCollectionViewController.h"
 #import "NATCollectionViewCell.h"
+#import "NATRecipe.h"
 
 @interface NATRecipeCollectionViewController ()
 
@@ -37,6 +38,10 @@
     UIImage *kaleBananaSmoothie = [UIImage imageNamed:@"kale-banana-smoothie"];
     UIImage *kaleSaladWithBloodOranges = [UIImage imageNamed:@"kale-salad-with-blood-oranges"];
     UIImage *tomatoAvocadoToast = [UIImage imageNamed:@"tomato-avocado-toast"];
+    
+    NATRecipe *auntyPsKaleSaladRecipeTile = [[NATRecipe alloc]initWithIngredients:@[@"kale"] recipeImage:auntyPsKaleSalad label:@"Aunty P's Kale Salad"];
+    NATRecipe *avocadoBreakfastPuddingRecipeTile = [[NATRecipe alloc]initWithIngredients:@[@"avocado"] recipeImage:avocadoBreakfastPudding label:@"Avocado Breakfast Pudding"];
+
     self.breakfastPictureArray = @[auntyPsKaleSalad, avocadoBreakfastPudding, avocadoBreakfastSalad, avocadoKaleSalad, eggBakedInAvocado, kaleBananaSmoothie, kaleSaladWithBloodOranges, tomatoAvocadoToast];
     [self.collectionView reloadData];
 }
@@ -64,7 +69,9 @@
     
     return cell;
 }
-/*
+
+
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -73,6 +80,6 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 @end
