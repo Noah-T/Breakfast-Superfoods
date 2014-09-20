@@ -10,29 +10,29 @@
 	<string>Breakfast Superfoods</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>093CAA48-7442-4B5F-A0C5-B1E640243D13</key>
+		<key>8180A3E601BADA7332CBC970B712A9FEDF8B82C0</key>
 		<string>https://github.com/Noah-T/Breakfast-Superfoods.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Breakfast Superfoods.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>093CAA48-7442-4B5F-A0C5-B1E640243D13</key>
+		<key>8180A3E601BADA7332CBC970B712A9FEDF8B82C0</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/Noah-T/Breakfast-Superfoods.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>093CAA48-7442-4B5F-A0C5-B1E640243D13</string>
+	<string>8180A3E601BADA7332CBC970B712A9FEDF8B82C0</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>093CAA48-7442-4B5F-A0C5-B1E640243D13</string>
+			<string>8180A3E601BADA7332CBC970B712A9FEDF8B82C0</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Breakfast-Superfoods</string>
 		</dict>
