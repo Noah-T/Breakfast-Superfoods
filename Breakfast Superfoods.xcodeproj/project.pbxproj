@@ -13,6 +13,8 @@
 		DE2F11A319CBB50000432CB8 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE2F11A219CBB50000432CB8 /* Property List.plist */; };
 		DE91A9E619CC83FB00EE8AD8 /* NATRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = DE91A9E519CC83FB00EE8AD8 /* NATRecipe.m */; };
 		DE91A9E919CCC3AB00EE8AD8 /* NATLargeRecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE91A9E819CCC3AB00EE8AD8 /* NATLargeRecipeViewController.m */; };
+		DEBDE1BD19D1DE200005C99A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBDE1BC19D1DE200005C99A /* Social.framework */; };
+		DEBDE1BF19D1E66B0005C99A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBDE1BE19D1E66B0005C99A /* MessageUI.framework */; };
 		DED7D42219C0D35300AA2AE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED7D42119C0D35300AA2AE0 /* Foundation.framework */; };
 		DED7D42419C0D35300AA2AE0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED7D42319C0D35300AA2AE0 /* CoreGraphics.framework */; };
 		DED7D42619C0D35300AA2AE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED7D42519C0D35300AA2AE0 /* UIKit.framework */; };
@@ -48,6 +50,8 @@
 		DE91A9E519CC83FB00EE8AD8 /* NATRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NATRecipe.m; path = ../NATRecipe.m; sourceTree = "<group>"; };
 		DE91A9E719CCC3AB00EE8AD8 /* NATLargeRecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NATLargeRecipeViewController.h; sourceTree = "<group>"; };
 		DE91A9E819CCC3AB00EE8AD8 /* NATLargeRecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NATLargeRecipeViewController.m; sourceTree = "<group>"; };
+		DEBDE1BC19D1DE200005C99A /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		DEBDE1BE19D1E66B0005C99A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		DED7D41E19C0D35300AA2AE0 /* Breakfast Superfoods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Breakfast Superfoods.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED7D42119C0D35300AA2AE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DED7D42319C0D35300AA2AE0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -71,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEBDE1BF19D1E66B0005C99A /* MessageUI.framework in Frameworks */,
+				DEBDE1BD19D1DE200005C99A /* Social.framework in Frameworks */,
 				DED7D42419C0D35300AA2AE0 /* CoreGraphics.framework in Frameworks */,
 				DED7D42619C0D35300AA2AE0 /* UIKit.framework in Frameworks */,
 				DED7D42219C0D35300AA2AE0 /* Foundation.framework in Frameworks */,
@@ -112,6 +118,8 @@
 		DED7D42019C0D35300AA2AE0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DEBDE1BE19D1E66B0005C99A /* MessageUI.framework */,
+				DEBDE1BC19D1DE200005C99A /* Social.framework */,
 				DED7D42119C0D35300AA2AE0 /* Foundation.framework */,
 				DED7D42319C0D35300AA2AE0 /* CoreGraphics.framework */,
 				DED7D42519C0D35300AA2AE0 /* UIKit.framework */,
