@@ -68,12 +68,14 @@
         SLComposeViewController *facebookViewController = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
         [facebookViewController setInitialText:self.recipeLabeltext];
         [self presentViewController:facebookViewController animated:YES completion:nil];
+    }else {
+        NSLog(@"Facebook account not found");
+        //need to flesh this out
     }
+    
 }
 
 - (IBAction)sendEmail:(id)sender {
-    NSString *emailTitle = @"Test email";
-    NSString *messageBody = @"Message body";
     NSArray *toRecepients = @[@"nteshu@gmail.com"];
     MFMailComposeViewController *mailViewController = [[MFMailComposeViewController alloc]init];
     mailViewController.mailComposeDelegate = self;

@@ -58,6 +58,7 @@
     
     
     
+    
    
     
     [self.collectionView reloadData];
@@ -86,7 +87,7 @@
     
     NSLog(@"%@", [self.breakfastRecipeArray valueForKey:@"label"]);
     
-    //cell.RecipeCellImageView
+   
     
     cell.label.text = [self.breakfastRecipeArray valueForKey:@"label"][indexPath.row];
     return cell;
