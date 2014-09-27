@@ -21,4 +21,26 @@
     return self;
 }
 
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+    [aCoder encodeObject:self.ingredients forKey:@"ingredients"];
+    [aCoder encodeObject:self.recipeImage forKey:@"recipeImage"];
+    [aCoder encodeObject:self.label forKey:@"label"];
+    
+}
+- (id)initWithCoder:(NSCoder *)aDecoder // NS_DESIGNATED_INITIALIZER
+{
+    self = [super init];
+    
+    _ingredients = [aDecoder decodeObjectForKey:@"ingredients"];
+    _recipeImage = [aDecoder decodeObjectForKey:@"recipeImage"];
+    _label = [aDecoder decodeObjectForKey:@"label"];
+    
+    return self;
+}
+
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"title: %@ \n ingredients: %@", self.label, self.ingredients];
+}
 @end

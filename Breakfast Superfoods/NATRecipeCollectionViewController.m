@@ -11,10 +11,17 @@
 #import "NATRecipe.h"
 #import "NATLargeRecipeViewController.h"
 
-@interface NATRecipeCollectionViewController ()
+static NSString *const kNATRecipeCellIdentifier = @"kNATRecipeCellIdentifier";
+
+@interface NATRecipeCollectionViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UISearchBarDelegate>
 
 @property (strong, nonatomic) NSArray *breakfastPictureArray;
 @property (strong, nonatomic) NSArray *breakfastRecipeArray;
+@property (strong, nonatomic) NSArray *filteredBreakfastRecipeArray;
+@property (strong, nonatomic) NSString *currentFilterString;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
+
 @end
 
 @implementation NATRecipeCollectionViewController
@@ -53,6 +60,8 @@
     
     self.breakfastRecipeArray = @[auntyPsKaleSaladRecipe, avocadoBreakfastPuddingRecipe, avocadoBreakfastSaladRecipe, avocadoKaleSaladRecipe, eggBakedInAvocadoRecipe, kaleBananaSmoothieRecipe, kaleSaladWithBloodOrangesRecipe];
     
+    self.filteredBreakfastRecipeArray = self.breakfastRecipeArray;
+    
     NSLog(@" %@", [self.breakfastRecipeArray[0]recipeImage]);
     
     
@@ -70,6 +79,37 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)setCurrentFilterString:(NSString *)currentFilterString
+{
+
+    if ([currentFilterString isEqualToString:_currentFilterString ]) {
+        return;
+    }
+    _currentFilterString = currentFilterString;
+    if (currentFilterString.length < 1) {
+        self.filteredBreakfastRecipeArray = self.breakfastRecipeArray;
+    
+    } else {
+        NSMutableArray *newFilteredArray = [NSMutableArray array];
+        
+        [self.breakfastRecipeArray enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+            NATRecipe *recipe = obj;
+            for (NSString *ingredient in recipe.ingredients) {
+                if([ingredient containsString:currentFilterString]){
+                    [newFilteredArray addObject:recipe];
+                    return ;
+                }
+            }
+        }];
+        
+        self.filteredBreakfastRecipeArray = [NSArray arrayWithArray:newFilteredArray];
+
+    }
+        [self.collectionView reloadData];
+}
+
+#pragma mark - Table View Methods
+
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
     return 1;
@@ -77,19 +117,17 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return self.breakfastRecipeArray.count;
+    return self.filteredBreakfastRecipeArray.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NATCollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"recipeCell" forIndexPath:indexPath];
-    cell.RecipeCellImageView.image = [self.breakfastRecipeArray valueForKey:@"recipeImage" ][indexPath.row ];
+    NATCollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:kNATRecipeCellIdentifier forIndexPath:indexPath];
     
-    NSLog(@"%@", [self.breakfastRecipeArray valueForKey:@"label"]);
+    NATRecipe *recipe = self.filteredBreakfastRecipeArray[indexPath.row];
+    cell.RecipeCellImageView.image = recipe.recipeImage;
+    cell.label.text = recipe.label;
     
-   
-    
-    cell.label.text = [self.breakfastRecipeArray valueForKey:@"label"][indexPath.row];
     return cell;
 }
 
@@ -107,15 +145,21 @@
         NSArray *indexPaths = [self.collectionView indexPathsForSelectedItems];
         NATLargeRecipeViewController *destinationViewController = segue.destinationViewController;
         NSIndexPath *indexPath = [indexPaths objectAtIndex:0]; //the first selected item
-        destinationViewController.recipeLabeltext = [[self.breakfastRecipeArray valueForKey:@"label"]objectAtIndex:indexPath.row];
-        destinationViewController.recipeImageImage = [[self.breakfastRecipeArray valueForKey:@"recipeImage"]objectAtIndex:indexPath.row];
         
+        NATRecipe *recipe = self.filteredBreakfastRecipeArray[indexPath.row] ;
+        destinationViewController.recipe = recipe;
+        destinationViewController.recipeLabeltext = recipe.label;
+        destinationViewController.recipeImageImage = recipe.recipeImage;
     }
-//    NSIndexPath *indexPathForLabel = [self.collectionView valueForKey:@"label"][inde];
-    
-    
-    
-    
 
+}
+
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
+{
+    if (searchText.length > 2) {
+        self.currentFilterString = searchText;
+    } else {
+        self.currentFilterString = nil;
+    }
 }
 @end

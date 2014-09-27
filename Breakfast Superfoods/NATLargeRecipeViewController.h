@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
+@class NATRecipe;
 
 
 @interface NATLargeRecipeViewController : UIViewController <MFMailComposeViewControllerDelegate>
@@ -15,6 +16,7 @@
 @property (nonatomic, strong) NSString *recipeLabeltext;
 @property (nonatomic, strong) IBOutlet UIImageView *recipeImage;
 @property (nonatomic, strong) UIImage *recipeImageImage;
+@property (nonatomic, strong) NATRecipe *recipe;
 
 - (IBAction)postToTwitter:(id)sender;
 - (IBAction)postToFacebook:(id)sender;

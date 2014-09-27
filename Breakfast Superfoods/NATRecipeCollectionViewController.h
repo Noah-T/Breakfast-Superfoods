@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NATRecipeCollectionViewController : UICollectionViewController
+@interface NATRecipeCollectionViewController : UIViewController
 
 @end

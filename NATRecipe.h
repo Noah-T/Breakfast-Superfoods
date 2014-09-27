@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface NATRecipe : NSObject
+<NSCoding>
 
 @property (strong, nonatomic)NSArray *ingredients;
 @property (strong, nonatomic)UIImage *recipeImage;
