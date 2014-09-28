@@ -157,8 +157,8 @@ static NSString *const kNATRecipeCellIdentifier = @"kNATRecipeCellIdentifier";
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
 {
     if (searchText.length > 2) {
-        self.currentFilterString = searchText;
-    } else {
+        self.currentFilterString = [searchText lowercaseString];
+            } else {
         self.currentFilterString = nil;
     }
 }

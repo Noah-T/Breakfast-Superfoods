@@ -53,8 +53,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Find something delicious!" translatesAutoresizingMaskIntoConstraints="NO" id="K9j-sQ-db6" customClass="NATRecipeSearchBar">
+                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ZdK-94-Mbd" id="Ixw-J5-mQF"/>
+                                </connections>
+                            </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Yl9-uN-JYo">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                                <rect key="frame" x="0.0" y="108" width="320" height="460"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ord-nB-FFM">
                                     <size key="itemSize" width="155" height="222"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -94,13 +101,6 @@
                                     <outlet property="delegate" destination="ZdK-94-Mbd" id="gmj-vx-uRO"/>
                                 </connections>
                             </collectionView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Find something delicious!" translatesAutoresizingMaskIntoConstraints="NO" id="K9j-sQ-db6" customClass="NATRecipeSearchBar">
-                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="ZdK-94-Mbd" id="Ixw-J5-mQF"/>
-                                </connections>
-                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -111,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c3i-yU-qdW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="797" y="-44"/>
+            <point key="canvasLocation" x="795" y="-64"/>
         </scene>
         <!--Large Recipe View Controller-->
         <scene sceneID="7LZ-Oa-Ov2">
