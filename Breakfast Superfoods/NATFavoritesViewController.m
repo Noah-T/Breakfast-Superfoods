@@ -56,7 +56,7 @@
 {
     NATFavoritesCollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
     NATRecipe *recipe = [self.breakfastRecipeArray objectAtIndex:indexPath.row];
-    cell.label.text = recipe.label;
+    cell.label.text = [NSString stringWithFormat:@" %@ : %@", recipe.label, recipe.ingredients[0]] ;
     cell.imageViewForFavorites.image = recipe.recipeImage;
     
     NSLog(@"recipe image has a class of: %@", [recipe.recipeImage class]);
