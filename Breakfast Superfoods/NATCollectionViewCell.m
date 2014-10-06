@@ -8,6 +8,7 @@
 
 #import "NATCollectionViewCell.h"
 
+
 @implementation NATCollectionViewCell
 
 //- (id)initWithFrame:(CGRect)frame
@@ -27,5 +28,8 @@
     // Drawing code
 }
 */
+
+
+
 
 @end

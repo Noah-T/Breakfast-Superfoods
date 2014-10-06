@@ -15,7 +15,7 @@ static NSString *const kNATRecipeCellIdentifier = @"kNATRecipeCellIdentifier";
 
 @interface NATRecipeCollectionViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UISearchBarDelegate>
 
-@property (strong, nonatomic) NSArray *breakfastPictureArray;
+
 @property (strong, nonatomic) NSArray *breakfastRecipeArray;
 @property (strong, nonatomic) NSArray *filteredBreakfastRecipeArray;
 @property (strong, nonatomic) NSString *currentFilterString;
@@ -56,7 +56,7 @@ static NSString *const kNATRecipeCellIdentifier = @"kNATRecipeCellIdentifier";
     NATRecipe *kaleBananaSmoothieRecipe = [[NATRecipe alloc]initWithIngredients:@[@"kale", @"banana"] recipeImage:[UIImage imageNamed:@"kale-banana-smoothie"] label:@"Kale Banana Smoothie"];
     NATRecipe *kaleSaladWithBloodOrangesRecipe = [[NATRecipe alloc]initWithIngredients:@[@"kale",@"blood oranges"] recipeImage:[UIImage imageNamed:@"kale-salad-with-blood-oranges"] label:@"Kale Salad with Blood Oranges"];
 
-    self.breakfastPictureArray = @[auntyPsKaleSalad, avocadoBreakfastPudding, avocadoBreakfastSalad, avocadoKaleSalad, eggBakedInAvocado, kaleBananaSmoothie, kaleSaladWithBloodOranges, tomatoAvocadoToast];
+    
     
     self.breakfastRecipeArray = @[auntyPsKaleSaladRecipe, avocadoBreakfastPuddingRecipe, avocadoBreakfastSaladRecipe, avocadoKaleSaladRecipe, eggBakedInAvocadoRecipe, kaleBananaSmoothieRecipe, kaleSaladWithBloodOrangesRecipe];
     
