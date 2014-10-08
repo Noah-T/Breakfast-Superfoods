@@ -93,7 +93,7 @@
     NSArray *toRecepients = @[@"nteshu@gmail.com"];
     MFMailComposeViewController *mailViewController = [[MFMailComposeViewController alloc]init];
     mailViewController.mailComposeDelegate = self;
-    [mailViewController setSubject:@"Yummy Recipe!"];
+    [mailViewController setSubject:self.recipeLabeltext];
     [mailViewController setMessageBody:@"Here's a yummy recipe!" isHTML:YES];
     [mailViewController setToRecipients:toRecepients];
     
@@ -158,9 +158,9 @@
         
         [self.saveButton setTitle:@"Remove" forState:UIControlStateNormal];
     } else {
-        NSLog(@"Pre: %li", mutableFavoritesArray.count);
+        NSLog(@"Pre: %d",mutableFavoritesArray.count);
         [mutableFavoritesArray removeObject:alreadyExistsData];
-        NSLog(@"Post: %li", mutableFavoritesArray.count);
+        NSLog(@"Post: %d", mutableFavoritesArray.count);
         [self.saveButton setTitle:@"Save" forState:UIControlStateNormal];
     }
     

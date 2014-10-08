@@ -31,6 +31,7 @@
 		DED7D43D19C0D35300AA2AE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED7D42519C0D35300AA2AE0 /* UIKit.framework */; };
 		DED7D44519C0D35300AA2AE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DED7D44319C0D35300AA2AE0 /* InfoPlist.strings */; };
 		DED7D44719C0D35300AA2AE0 /* Breakfast_SuperfoodsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DED7D44619C0D35300AA2AE0 /* Breakfast_SuperfoodsTests.m */; };
+		DEF423DA19E367C500484F55 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF423D919E367C500484F55 /* TestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 		DED7D44219C0D35300AA2AE0 /* Breakfast SuperfoodsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Breakfast SuperfoodsTests-Info.plist"; sourceTree = "<group>"; };
 		DED7D44419C0D35300AA2AE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DED7D44619C0D35300AA2AE0 /* Breakfast_SuperfoodsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Breakfast_SuperfoodsTests.m; sourceTree = "<group>"; };
+		DEF423D819E367C500484F55 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		DEF423D919E367C500484F55 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +153,8 @@
 				DE91A9E419CC83FB00EE8AD8 /* NATRecipe.h */,
 				DE91A9E519CC83FB00EE8AD8 /* NATRecipe.m */,
 				DE2F119D19CBA26700432CB8 /* Storyboard.storyboard */,
+				DEF423D819E367C500484F55 /* TestViewController.h */,
+				DEF423D919E367C500484F55 /* TestViewController.m */,
 				DED1AD3A19E3228B00F2F082 /* NATFavoritesViewController.h */,
 				DED1AD3B19E3228B00F2F082 /* NATFavoritesViewController.m */,
 				DE2F119A19CBA12000432CB8 /* NATRecipeCollectionViewController.h */,
@@ -246,6 +251,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Noah Teshu";
 				TargetAttributes = {
+					DED7D41D19C0D35300AA2AE0 = {
+						DevelopmentTeam = HF582BN7VG;
+					};
 					DED7D43819C0D35300AA2AE0 = {
 						TestTargetID = DED7D41D19C0D35300AA2AE0;
 					};
@@ -303,6 +311,7 @@
 				DE2F094819D727A300F0C8B0 /* NATUserDefaultInfo.m in Sources */,
 				DED7D43219C0D35300AA2AE0 /* NATAppDelegate.m in Sources */,
 				DED7D42E19C0D35300AA2AE0 /* main.m in Sources */,
+				DEF423DA19E367C500484F55 /* TestViewController.m in Sources */,
 				DE2F094219D71D6E00F0C8B0 /* NATRecipeSearchBar.m in Sources */,
 				DE91A9E619CC83FB00EE8AD8 /* NATRecipe.m in Sources */,
 				DE2F11A119CBA65D00432CB8 /* NATCollectionViewCell.m in Sources */,
@@ -422,10 +431,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Breakfast Superfoods/Breakfast Superfoods-Prefix.pch";
 				INFOPLIST_FILE = "Breakfast Superfoods/Breakfast Superfoods-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -435,10 +447,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Breakfast Superfoods/Breakfast Superfoods-Prefix.pch";
 				INFOPLIST_FILE = "Breakfast Superfoods/Breakfast Superfoods-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

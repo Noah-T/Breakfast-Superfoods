@@ -34,11 +34,14 @@
     self.breakfastRecipeArray = [NSMutableArray array];
     for (NSData *data in [[NSUserDefaults standardUserDefaults]objectForKey:kKeyToFavoritesArray]) {
         NATRecipe *recipe = [NSKeyedUnarchiver unarchiveObjectWithData:data];
-        NSLog(@"Recipe name is: %@", recipe.label);
+        NSLog(@"Recipe is: %@", recipe);
         NSLog(@"Recipe image when unarchiving is: %@", recipe.recipeImage);
         [self.breakfastRecipeArray addObject:recipe];
     }
+    NSLog(@"the array containds %d objects", self.breakfastRecipeArray.count);
+    NSLog(@"The objects are of type: %@", [self.breakfastRecipeArray[0]class]);
 }
+
 
 #pragma mark - Collection View Methods
 

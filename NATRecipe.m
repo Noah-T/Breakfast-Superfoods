@@ -21,10 +21,11 @@
     return self;
 }
 
+
 - (void)encodeWithCoder:(NSCoder *)aCoder
 {
     [aCoder encodeObject:self.ingredients forKey:@"ingredients"];
-    [aCoder encodeObject:self.recipeImage forKey:@"recipeImage"];
+    [aCoder encodeObject:UIImagePNGRepresentation(self.recipeImage) forKey:@"recipeImage"];
     [aCoder encodeObject:self.label forKey:@"label"];
     
 }
@@ -33,7 +34,7 @@
     self = [super init];
     
     _ingredients = [aDecoder decodeObjectForKey:@"ingredients"];
-    _recipeImage = [aDecoder decodeObjectForKey:@"recipeImage"];
+    _recipeImage = [UIImage imageWithData:[aDecoder decodeObjectForKey:@"recipeImage"]];
     _label = [aDecoder decodeObjectForKey:@"label"];
     
     return self;

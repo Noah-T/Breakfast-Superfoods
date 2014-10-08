@@ -39,15 +39,7 @@ static NSString *const kNATRecipeCellIdentifier = @"kNATRecipeCellIdentifier";
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    UIImage *auntyPsKaleSalad = [UIImage imageNamed:@"aunty-ps-kale-salad"];
-    UIImage *avocadoBreakfastPudding = [UIImage imageNamed:@"avocado-breakfast-pudding"];
-    UIImage *avocadoBreakfastSalad = [UIImage imageNamed:@"avocado-breakfast-salad"];
-    UIImage *avocadoKaleSalad = [UIImage imageNamed:@"avocado-kale-salad"];
-    UIImage *eggBakedInAvocado = [UIImage imageNamed:@"egg-baked-in-avocado"];
-    UIImage *kaleBananaSmoothie = [UIImage imageNamed:@"kale-banana-smoothie"];
-    UIImage *kaleSaladWithBloodOranges = [UIImage imageNamed:@"kale-salad-with-blood-oranges"];
-    UIImage *tomatoAvocadoToast = [UIImage imageNamed:@"tomato-avocado-toast"];
-    
+        
     NATRecipe *auntyPsKaleSaladRecipe = [[NATRecipe alloc]initWithIngredients:@[@"kale"] recipeImage:[UIImage imageNamed:@"aunty-ps-kale-salad"] label:@"Aunty P's Kale Salad"];
     NATRecipe *avocadoBreakfastPuddingRecipe = [[NATRecipe alloc]initWithIngredients:@[@"avocado"] recipeImage:[UIImage imageNamed:@"avocado-breakfast-pudding"] label:@"Avocado Breakfast Pudding"];
     NATRecipe *avocadoBreakfastSaladRecipe = [[NATRecipe alloc]initWithIngredients:@[@"avocado"] recipeImage:[UIImage imageNamed:@"avocado-breakfast-salad"] label:@"Avocado Breakfast Salad"];
@@ -161,5 +153,10 @@ static NSString *const kNATRecipeCellIdentifier = @"kNATRecipeCellIdentifier";
             } else {
         self.currentFilterString = nil;
     }
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+{
+    [searchBar resignFirstResponder];
 }
 @end

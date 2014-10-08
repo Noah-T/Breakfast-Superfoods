@@ -13,8 +13,10 @@
 
 @property (strong, nonatomic)NSArray *ingredients;
 @property (strong, nonatomic)UIImage *recipeImage;
+@property (strong, nonatomic)NSData *recipeImageData;
 @property (strong, nonatomic)NSString *label;
 
 - (instancetype)initWithIngredients:(NSArray *)ingredients recipeImage:(UIImage *)recipeImage label:(NSString *)label;
+
 
 @end
