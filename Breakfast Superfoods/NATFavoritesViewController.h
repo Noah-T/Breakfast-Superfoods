@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "NATUserDefaultInfo.h"
 
-@interface NATFavoritesViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface NATFavoritesViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate, UISearchBarDelegate>
 
 @end

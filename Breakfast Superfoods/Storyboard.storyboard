@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A379a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="f4a-mh-AJk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="f4a-mh-AJk">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -7,7 +7,7 @@
         <!--Home-->
         <scene sceneID="1Nr-5a-bBb">
             <objects>
-                <viewController id="gXX-Ob-uug" sceneMemberID="viewController">
+                <viewController id="gXX-Ob-uug" customClass="NATHomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bYP-Qt-s6S"/>
                         <viewControllerLayoutGuide type="bottom" id="Ycb-Xo-reW"/>
@@ -31,7 +31,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="mtJ-fJ-7sh" kind="push" id="8pT-Km-cK0"/>
+                                    <action selector="favoriteButtonPressed:" destination="gXX-Ob-uug" eventType="touchUpInside" id="Odd-co-Pfg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -44,6 +44,10 @@
                     <navigationItem key="navigationItem" title="Home" id="MAt-Nf-OvF">
                         <barButtonItem key="backBarButtonItem" title="Home" id="OFC-TH-EyR"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="X0F-PS-mzK" kind="push" identifier="favoritesDoNotExist" id="36F-WZ-Gvx"/>
+                        <segue destination="mtJ-fJ-7sh" kind="push" identifier="favoritesExist" id="dni-xz-r1F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s1a-9X-TOy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,9 +65,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Find something delicious!" showsSearchResultsButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K9j-sQ-db6" customClass="NATRecipeSearchBar">
+                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Find something delicious!" translatesAutoresizingMaskIntoConstraints="NO" id="K9j-sQ-db6" customClass="NATRecipeSearchBar">
                                 <rect key="frame" x="0.0" y="64" width="320" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
                                 <connections>
                                     <outlet property="delegate" destination="ZdK-94-Mbd" id="Ixw-J5-mQF"/>
                                 </connections>
@@ -71,7 +79,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Yl9-uN-JYo">
                                 <rect key="frame" x="0.0" y="108" width="320" height="460"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ord-nB-FFM">
-                                    <size key="itemSize" width="155" height="222"/>
+                                    <size key="itemSize" width="155" height="183"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -81,14 +89,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="155" height="222"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="155" height="222"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="155" height="183"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1X8-Kl-CWp">
-                                                    <rect key="frame" x="0.0" y="0.0" width="155" height="165"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="155" height="117"/>
                                                 </imageView>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cool Label" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="141" translatesAutoresizingMaskIntoConstraints="NO" id="1hP-PW-9Ug">
-                                                    <rect key="frame" x="8" y="173" width="141" height="41"/>
+                                                    <rect key="frame" x="7" y="123" width="141" height="41"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -96,7 +104,7 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <color key="backgroundColor" red="1" green="0.99988615183048712" blue="0.93470158109344736" alpha="1" colorSpace="calibratedRGB"/>
-                                        <size key="customSize" width="155" height="222"/>
+                                        <size key="customSize" width="155" height="183"/>
                                         <connections>
                                             <outlet property="RecipeCellImageView" destination="1X8-Kl-CWp" id="LTZ-Px-G08"/>
                                             <outlet property="label" destination="1hP-PW-9Ug" id="Gc5-Ew-hdC"/>
@@ -121,6 +129,42 @@
             </objects>
             <point key="canvasLocation" x="795" y="-64"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="k8t-gQ-Bks">
+            <objects>
+                <viewController id="X0F-PS-mzK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t0E-6U-WLs"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Ob-Jc-fve"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jHS-Yd-ro0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBF-3W-wfS">
+                                <rect key="frame" x="74" y="269" width="172" height="30"/>
+                                <state key="normal" title="Find something delicous!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZdK-94-Mbd" kind="push" identifier="favoritesExist" id="XJF-ZP-xeH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No favorites yet!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SzD-QQ-m2j">
+                                <rect key="frame" x="98" y="123" width="125" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jUg-lz-Olx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4rg-GS-od5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="143" y="568"/>
+        </scene>
         <!--Favorites View Controller-->
         <scene sceneID="2rl-r9-j9f">
             <objects>
@@ -133,11 +177,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Search your favorites." translatesAutoresizingMaskIntoConstraints="NO" id="Ukh-Ur-4AT">
+                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XJw-yn-ltv">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="108" width="320" height="460"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RG0-oV-Ycz">
-                                    <size key="itemSize" width="154" height="193"/>
+                                    <size key="itemSize" width="155" height="193"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -163,6 +211,7 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <size key="customSize" width="154" height="193"/>
                                         <connections>
                                             <outlet property="imageViewForFavorites" destination="KNa-55-ksJ" id="cQw-wn-gpX"/>
                                             <outlet property="label" destination="j4b-Gu-Jyd" id="04Y-aW-mFV"/>
@@ -180,11 +229,13 @@
                     <navigationItem key="navigationItem" id="vs3-0j-EEd"/>
                     <connections>
                         <outlet property="collectionView" destination="XJw-yn-ltv" id="uYz-ro-N5d"/>
+                        <outlet property="searchBar" destination="Ukh-Ur-4AT" id="iXs-ez-bjZ"/>
+                        <segue destination="X0F-PS-mzK" kind="push" identifier="favoritesNotFound" id="zuU-x9-Lua"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JIY-WP-zDO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="674.5" y="665"/>
+            <point key="canvasLocation" x="718" y="717"/>
         </scene>
         <!--Large Recipe View Controller-->
         <scene sceneID="7LZ-Oa-Ov2">
@@ -269,7 +320,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0dY-zV-YBi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1320" y="-64"/>
+            <point key="canvasLocation" x="1178" y="822"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="T8y-AH-7hv">
@@ -289,6 +340,91 @@
             </objects>
             <point key="canvasLocation" x="-7" y="-64"/>
         </scene>
+        <!--Large Recipe View Controller-->
+        <scene sceneID="3HS-JD-lKv">
+            <objects>
+                <viewController id="ki9-Bd-U0s" customClass="NATLargeRecipeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0gR-Vs-fr8"/>
+                        <viewControllerLayoutGuide type="bottom" id="EvO-Gb-u2K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uNK-yt-g8Y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bdz-Od-h7o">
+                                <rect key="frame" x="0.0" y="64" width="320" height="199"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="199" id="PSP-Yf-JxS"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0W-W5-pg0">
+                                <rect key="frame" x="16" y="301" width="288" height="202"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Lorem ipsum dolor sit er elit lamet, coLorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Lorem ipsum dolor sit er elit lamet, coLorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Lorem ipsum dolor sit er elit lamet, co</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5c-BN-aHJ">
+                                <rect key="frame" x="16" y="278" width="280" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ev-Kw-yUE">
+                                <rect key="frame" x="33" y="524" width="30" height="30"/>
+                                <state key="normal" backgroundImage="fb-logo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="postToFacebook:" destination="ki9-Bd-U0s" eventType="touchUpInside" id="dBO-c9-d7K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxW-Bb-5gw">
+                                <rect key="frame" x="96" y="524" width="30" height="30"/>
+                                <state key="normal" backgroundImage="twitter-bird">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="postToTwitter:" destination="ki9-Bd-U0s" eventType="touchUpInside" id="Aue-zZ-n4D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMp-an-p0T">
+                                <rect key="frame" x="157" y="524" width="30" height="30"/>
+                                <state key="normal" backgroundImage="mail">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendEmail:" destination="ki9-Bd-U0s" eventType="touchUpInside" id="KHx-y1-QwL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqo-sc-aZh">
+                                <rect key="frame" x="219" y="524" width="85" height="30"/>
+                                <state key="normal" title="label">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bdz-Od-h7o" firstAttribute="leading" secondItem="uNK-yt-g8Y" secondAttribute="leading" id="1EK-xk-VYH"/>
+                            <constraint firstItem="bdz-Od-h7o" firstAttribute="top" secondItem="0gR-Vs-fr8" secondAttribute="bottom" id="6Os-lC-fiE"/>
+                            <constraint firstAttribute="trailing" secondItem="bdz-Od-h7o" secondAttribute="trailing" id="9ap-zn-Wsv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aj6-47-L7Q">
+                        <barButtonItem key="backBarButtonItem" title="Recipes" id="wes-7h-YEg"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="recipeImage" destination="bdz-Od-h7o" id="YL8-Mu-xg1"/>
+                        <outlet property="recipeLabel" destination="i5c-BN-aHJ" id="qtv-RX-OrD"/>
+                        <outlet property="saveButton" destination="kqo-sc-aZh" id="7Wz-jX-EUz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pFy-im-As2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1205" y="118"/>
+        </scene>
     </scenes>
     <resources>
         <image name="fb-logo" width="512" height="512"/>
@@ -300,4 +436,8 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="PbE-hP-ot5"/>
+        <segue reference="zuU-x9-Lua"/>
+    </inferredMetricsTieBreakers>
 </document>
