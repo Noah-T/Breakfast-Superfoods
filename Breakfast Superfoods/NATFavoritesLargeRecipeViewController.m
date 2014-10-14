@@ -7,8 +7,18 @@
 //
 
 #import "NATFavoritesLargeRecipeViewController.h"
+#import "NATUserDefaultInfo.h"
 
 @interface NATFavoritesLargeRecipeViewController ()
+
+@property (nonatomic, strong) IBOutlet UILabel *recipeLabel;
+@property (nonatomic, strong) NSString *recipeLabeltext;
+@property (nonatomic, strong) IBOutlet UIImageView *recipeImage;
+@property (nonatomic, strong) UIImage *recipeImageImage;
+@property (nonatomic, strong) NATRecipe *recipe;
+@property (strong, nonatomic) IBOutlet UIButton *saveButton;
+
+
 - (IBAction)postToFacebook:(id)sender;
 - (IBAction)postToTwitter:(id)sender;
 - (IBAction)sendEmail:(id)sender;
@@ -43,8 +53,19 @@
 }
 
 - (IBAction)postToTwitter:(id)sender {
+    [super postToTwitter:sender];
 }
 
 - (IBAction)sendEmail:(id)sender {
+    [super sendEmail:sender];
 }
+
+-(void)saveButtonPressed{
+    [super saveButtonPressed];
+    [[NSUserDefaults standardUserDefaults]synchronize];
+    NSLog(@"There are %d objects in user defaults", [[[NSUserDefaults standardUserDefaults]objectForKey:kKeyToFavoritesArray]count]);
+}
+
+
+
 @end

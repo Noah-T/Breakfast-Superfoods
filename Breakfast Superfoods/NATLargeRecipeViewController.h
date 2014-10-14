@@ -22,4 +22,7 @@
 - (IBAction)postToFacebook:(id)sender;
 - (IBAction)sendEmail:(id)sender;
 
+-(void)saveButtonPressed;
+- (BOOL) doesRecipeAlreadyExist:(NATRecipe *)recipe;
+
 @end

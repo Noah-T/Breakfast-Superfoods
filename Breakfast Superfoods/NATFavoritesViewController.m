@@ -10,6 +10,7 @@
 #import "NATCollectionViewCell.h"
 #import "NATFavoritesCollectionViewCell.h"
 #import "NATRecipe.h"
+#import "NATFavoritesLargeRecipeViewController.h"
 
 @interface NATFavoritesViewController ()
 
@@ -35,13 +36,24 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    //this needs to be called near the top of the method to immediately catch deletion in the detail view (when navigated to using the back button)
+    [self.collectionView reloadData];
+    NSLog(@"ViewWillAppear getting called");
+    NSLog(@"There are %d objects in user defaults", [[[NSUserDefaults standardUserDefaults]objectForKey:kKeyToFavoritesArray]count]);
     self.breakfastRecipeArray = [NSMutableArray array];
     for (NSData *data in [[NSUserDefaults standardUserDefaults]objectForKey:kKeyToFavoritesArray]) {
         NATRecipe *recipe = [NSKeyedUnarchiver unarchiveObjectWithData:data];
         if (recipe) {
             [self.breakfastRecipeArray addObject:recipe];
+            NSLog(@"recipes found");
+            NSLog(@"hello?");
+            [self.collectionView reloadData];
 
         } else {
+            NSLog(@"no recipes here");
+            NSLog(@"hello?");
+
+            [self.collectionView reloadData];
             return;
         }
     }
@@ -124,6 +136,25 @@
     NSLog(@"press logged");
 
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    if ([segue.identifier  isEqualToString:@"favoritesLargeRecipeView"]) {
+        NSLog(@"button pressed");
+        NSArray *indexPaths = [self.collectionView indexPathsForSelectedItems];
+        NATFavoritesLargeRecipeViewController *destinationViewController = segue.destinationViewController;
+        NSIndexPath *indexPath = [indexPaths objectAtIndex:0]; //the first selected item
+        
+        NATRecipe *recipe = self.filteredBreakfastRecipeArray[indexPath.row] ;
+        destinationViewController.recipe = recipe;
+        destinationViewController.recipeLabeltext = recipe.label;
+        destinationViewController.recipeImageImage = recipe.recipeImage;
+    }
+    
+}
+
 
 
 

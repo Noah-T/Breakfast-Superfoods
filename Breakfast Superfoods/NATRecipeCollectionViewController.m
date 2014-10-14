@@ -10,6 +10,7 @@
 #import "NATCollectionViewCell.h"
 #import "NATRecipe.h"
 #import "NATLargeRecipeViewController.h"
+#import "NATUserDefaultInfo.h"
 
 static NSString *const kNATRecipeCellIdentifier = @"kNATRecipeCellIdentifier";
 
@@ -65,10 +66,20 @@ static NSString *const kNATRecipeCellIdentifier = @"kNATRecipeCellIdentifier";
     [self.collectionView reloadData];
 }
 
-- (void)didReceiveMemoryWarning
+- (void)viewWillDisappear:(BOOL)animated
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [super viewWillDisappear:animated];
+    if (self.isMovingFromParentViewController) {
+        NSLog(@"back is being pressed");
+        if ([[[NSUserDefaults standardUserDefaults]objectForKey:kKeyToFavoritesArray]count]==0) {
+            NSLog(@"there are no items in favorites");
+            [self.navigationController popViewControllerAnimated:NO];
+
+        } else {
+            NSLog(@"there are items in favorites");
+            [self.navigationController popToRootViewControllerAnimated:NO];
+        }
+    }
 }
 
 -(void)setCurrentFilterString:(NSString *)currentFilterString

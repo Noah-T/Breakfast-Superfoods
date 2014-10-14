@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="f4a-mh-AJk">
     <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -53,7 +54,7 @@
             </objects>
             <point key="canvasLocation" x="388" y="-56"/>
         </scene>
-        <!--Recipe Collection View Controller-->
+        <!--Recipes-->
         <scene sceneID="l1J-sJ-pYV">
             <objects>
                 <viewController id="ZdK-94-Mbd" customClass="NATRecipeCollectionViewController" sceneMemberID="viewController">
@@ -120,7 +121,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="aW3-y6-a9V"/>
+                    <navigationItem key="navigationItem" title="Recipes" id="aW3-y6-a9V"/>
                     <connections>
                         <outlet property="collectionView" destination="Yl9-uN-JYo" id="7mo-Mo-SfX"/>
                     </connections>
@@ -165,7 +166,7 @@
             </objects>
             <point key="canvasLocation" x="143" y="568"/>
         </scene>
-        <!--Favorites View Controller-->
+        <!--Favorites-->
         <scene sceneID="2rl-r9-j9f">
             <objects>
                 <viewController id="mtJ-fJ-7sh" customClass="NATFavoritesViewController" sceneMemberID="viewController">
@@ -215,6 +216,7 @@
                                         <connections>
                                             <outlet property="imageViewForFavorites" destination="KNa-55-ksJ" id="cQw-wn-gpX"/>
                                             <outlet property="label" destination="j4b-Gu-Jyd" id="04Y-aW-mFV"/>
+                                            <segue destination="ki9-Bd-U0s" kind="push" identifier="favoritesLargeRecipeView" id="yOV-9B-hZr"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -226,7 +228,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vs3-0j-EEd"/>
+                    <navigationItem key="navigationItem" title="Favorites" id="vs3-0j-EEd"/>
                     <connections>
                         <outlet property="collectionView" destination="XJw-yn-ltv" id="uYz-ro-N5d"/>
                         <outlet property="searchBar" destination="Ukh-Ur-4AT" id="iXs-ez-bjZ"/>
@@ -320,7 +322,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0dY-zV-YBi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1178" y="822"/>
+            <point key="canvasLocation" x="1208" y="43"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="T8y-AH-7hv">
@@ -340,10 +342,10 @@
             </objects>
             <point key="canvasLocation" x="-7" y="-64"/>
         </scene>
-        <!--Large Recipe View Controller-->
+        <!--Favorites Large Recipe View Controller-->
         <scene sceneID="3HS-JD-lKv">
             <objects>
-                <viewController id="ki9-Bd-U0s" customClass="NATLargeRecipeViewController" sceneMemberID="viewController">
+                <viewController id="ki9-Bd-U0s" customClass="NATFavoritesLargeRecipeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0gR-Vs-fr8"/>
                         <viewControllerLayoutGuide type="bottom" id="EvO-Gb-u2K"/>
@@ -377,7 +379,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="postToFacebook:" destination="ki9-Bd-U0s" eventType="touchUpInside" id="dBO-c9-d7K"/>
+                                    <action selector="postToFacebook:" destination="ki9-Bd-U0s" eventType="touchUpInside" id="fHe-2K-KEn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxW-Bb-5gw">
@@ -386,7 +388,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="postToTwitter:" destination="ki9-Bd-U0s" eventType="touchUpInside" id="Aue-zZ-n4D"/>
+                                    <action selector="postToTwitter:" destination="ki9-Bd-U0s" eventType="touchUpInside" id="00r-he-qBa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMp-an-p0T">
@@ -395,7 +397,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="sendEmail:" destination="ki9-Bd-U0s" eventType="touchUpInside" id="KHx-y1-QwL"/>
+                                    <action selector="sendEmail:" destination="ki9-Bd-U0s" eventType="touchUpInside" id="NoY-bJ-kH6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqo-sc-aZh">
@@ -416,14 +418,14 @@
                         <barButtonItem key="backBarButtonItem" title="Recipes" id="wes-7h-YEg"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="recipeImage" destination="bdz-Od-h7o" id="YL8-Mu-xg1"/>
-                        <outlet property="recipeLabel" destination="i5c-BN-aHJ" id="qtv-RX-OrD"/>
-                        <outlet property="saveButton" destination="kqo-sc-aZh" id="7Wz-jX-EUz"/>
+                        <outlet property="recipeImage" destination="bdz-Od-h7o" id="Gc6-eE-CrT"/>
+                        <outlet property="recipeLabel" destination="i5c-BN-aHJ" id="BWG-CY-FLL"/>
+                        <outlet property="saveButton" destination="kqo-sc-aZh" id="Sol-aA-jU6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pFy-im-As2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1205" y="118"/>
+            <point key="canvasLocation" x="1149" y="717"/>
         </scene>
     </scenes>
     <resources>
@@ -437,7 +439,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="36F-WZ-Gvx"/>
         <segue reference="PbE-hP-ot5"/>
-        <segue reference="zuU-x9-Lua"/>
     </inferredMetricsTieBreakers>
 </document>
