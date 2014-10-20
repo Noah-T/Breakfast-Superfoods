@@ -71,15 +71,7 @@ static NSString *const kNATRecipeCellIdentifier = @"kNATRecipeCellIdentifier";
     [super viewWillDisappear:animated];
     if (self.isMovingFromParentViewController) {
         NSLog(@"back is being pressed");
-        if ([[[NSUserDefaults standardUserDefaults]objectForKey:kKeyToFavoritesArray]count]==0) {
-            NSLog(@"there are no items in favorites");
-            [self.navigationController popViewControllerAnimated:NO];
-
-        } else {
-            NSLog(@"there are items in favorites");
-            [self.navigationController popToRootViewControllerAnimated:NO];
-        }
-    }
+            }
 }
 
 -(void)setCurrentFilterString:(NSString *)currentFilterString
@@ -88,7 +80,9 @@ static NSString *const kNATRecipeCellIdentifier = @"kNATRecipeCellIdentifier";
     if ([currentFilterString isEqualToString:_currentFilterString ]) {
         return;
     }
+    
     _currentFilterString = currentFilterString;
+
     if (currentFilterString.length < 1) {
         self.filteredBreakfastRecipeArray = self.breakfastRecipeArray;
     
@@ -98,8 +92,12 @@ static NSString *const kNATRecipeCellIdentifier = @"kNATRecipeCellIdentifier";
         [self.breakfastRecipeArray enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
             NATRecipe *recipe = obj;
             for (NSString *ingredient in recipe.ingredients) {
-                if([ingredient containsString:currentFilterString]){
+                
+                //note: was previously using containsString, but this only works in iOS8 (will crash in iOS 7 and below)
+                if([ingredient rangeOfString:currentFilterString options:NSCaseInsensitiveSearch].location != NSNotFound){
+
                     [newFilteredArray addObject:recipe];
+
                     return ;
                 }
             }

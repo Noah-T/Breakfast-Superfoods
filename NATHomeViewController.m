@@ -34,9 +34,11 @@
         NATRecipe *recipe = [NSKeyedUnarchiver unarchiveObjectWithData:data];
         if (recipe) {
             [self.breakfastRecipeArray addObject:recipe];
+            NSLog(@"recipe found in user defaults");
         } else {
-            return;
+            NSLog(@"recipe not in user defaults");
         }
+        
         
     }
 }

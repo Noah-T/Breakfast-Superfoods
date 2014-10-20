@@ -13,6 +13,7 @@
 		DE2F119E19CBA26700432CB8 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE2F119D19CBA26700432CB8 /* Storyboard.storyboard */; };
 		DE2F11A119CBA65D00432CB8 /* NATCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2F11A019CBA65D00432CB8 /* NATCollectionViewCell.m */; };
 		DE2F11A319CBB50000432CB8 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE2F11A219CBB50000432CB8 /* Property List.plist */; };
+		DE5053E719F5ACF7008AA05E /* NATNoFavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5053E619F5ACF7008AA05E /* NATNoFavoritesViewController.m */; };
 		DE6BDF2319EDB75D00045257 /* NATHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6BDF2219EDB75D00045257 /* NATHomeViewController.m */; };
 		DE6BDF2619EDC14800045257 /* NATFavoritesLargeRecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6BDF2519EDC14800045257 /* NATFavoritesLargeRecipeViewController.m */; };
 		DE91A9E619CC83FB00EE8AD8 /* NATRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = DE91A9E519CC83FB00EE8AD8 /* NATRecipe.m */; };
@@ -56,6 +57,8 @@
 		DE2F119F19CBA65D00432CB8 /* NATCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NATCollectionViewCell.h; sourceTree = "<group>"; };
 		DE2F11A019CBA65D00432CB8 /* NATCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NATCollectionViewCell.m; sourceTree = "<group>"; };
 		DE2F11A219CBB50000432CB8 /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		DE5053E519F5ACF7008AA05E /* NATNoFavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NATNoFavoritesViewController.h; path = ../NATNoFavoritesViewController.h; sourceTree = "<group>"; };
+		DE5053E619F5ACF7008AA05E /* NATNoFavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NATNoFavoritesViewController.m; path = ../NATNoFavoritesViewController.m; sourceTree = "<group>"; };
 		DE6BDF2119EDB75D00045257 /* NATHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NATHomeViewController.h; path = ../NATHomeViewController.h; sourceTree = "<group>"; };
 		DE6BDF2219EDB75D00045257 /* NATHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NATHomeViewController.m; path = ../NATHomeViewController.m; sourceTree = "<group>"; };
 		DE6BDF2419EDC14800045257 /* NATFavoritesLargeRecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NATFavoritesLargeRecipeViewController.h; sourceTree = "<group>"; };
@@ -157,14 +160,16 @@
 				DE2F11A019CBA65D00432CB8 /* NATCollectionViewCell.m */,
 				DED1AD3D19E3324300F2F082 /* NATFavoritesCollectionViewCell.h */,
 				DED1AD3E19E3324300F2F082 /* NATFavoritesCollectionViewCell.m */,
+				DE6BDF2419EDC14800045257 /* NATFavoritesLargeRecipeViewController.h */,
+				DE6BDF2519EDC14800045257 /* NATFavoritesLargeRecipeViewController.m */,
 				DED1AD3A19E3228B00F2F082 /* NATFavoritesViewController.h */,
 				DED1AD3B19E3228B00F2F082 /* NATFavoritesViewController.m */,
 				DE6BDF2119EDB75D00045257 /* NATHomeViewController.h */,
 				DE6BDF2219EDB75D00045257 /* NATHomeViewController.m */,
-				DE6BDF2419EDC14800045257 /* NATFavoritesLargeRecipeViewController.h */,
-				DE6BDF2519EDC14800045257 /* NATFavoritesLargeRecipeViewController.m */,
 				DE91A9E719CCC3AB00EE8AD8 /* NATLargeRecipeViewController.h */,
 				DE91A9E819CCC3AB00EE8AD8 /* NATLargeRecipeViewController.m */,
+				DE5053E519F5ACF7008AA05E /* NATNoFavoritesViewController.h */,
+				DE5053E619F5ACF7008AA05E /* NATNoFavoritesViewController.m */,
 				DE91A9E419CC83FB00EE8AD8 /* NATRecipe.h */,
 				DE91A9E519CC83FB00EE8AD8 /* NATRecipe.m */,
 				DE2F119A19CBA12000432CB8 /* NATRecipeCollectionViewController.h */,
@@ -311,6 +316,7 @@
 			files = (
 				DE91A9E919CCC3AB00EE8AD8 /* NATLargeRecipeViewController.m in Sources */,
 				DE2F119C19CBA12000432CB8 /* NATRecipeCollectionViewController.m in Sources */,
+				DE5053E719F5ACF7008AA05E /* NATNoFavoritesViewController.m in Sources */,
 				DE6BDF2619EDC14800045257 /* NATFavoritesLargeRecipeViewController.m in Sources */,
 				DED1AD3F19E3324300F2F082 /* NATFavoritesCollectionViewCell.m in Sources */,
 				DED1AD3C19E3228B00F2F082 /* NATFavoritesViewController.m in Sources */,
