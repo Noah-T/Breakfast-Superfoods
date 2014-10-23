@@ -48,10 +48,17 @@ static NSString *const kNATRecipeCellIdentifier = @"kNATRecipeCellIdentifier";
     NATRecipe *eggBakedInAvocadoRecipe = [[NATRecipe alloc]initWithIngredients:@[@"avocado"] recipeImage:[UIImage imageNamed:@"egg-baked-in-avocado"] label:@"Egg Baked in Avocado"];
     NATRecipe *kaleBananaSmoothieRecipe = [[NATRecipe alloc]initWithIngredients:@[@"kale", @"banana"] recipeImage:[UIImage imageNamed:@"kale-banana-smoothie"] label:@"Kale Banana Smoothie"];
     NATRecipe *kaleSaladWithBloodOrangesRecipe = [[NATRecipe alloc]initWithIngredients:@[@"kale",@"blood oranges"] recipeImage:[UIImage imageNamed:@"kale-salad-with-blood-oranges"] label:@"Kale Salad with Blood Oranges"];
+    
+    //berries
+    NATRecipe *berryBreakfastQuinoa = [[NATRecipe alloc]initWithIngredients:@[@"milk", @"yogurt", @"chia", @"quinoa", @"fruit", @"berries", @"almonds", @"cinnamon"] recipeImage:[UIImage imageNamed:@"berryrecipe1"] label:@"Berry Breakfast Quinoa"];
+    NATRecipe *rawVeganBlueberryCoconutBreakfastShake = [[NATRecipe alloc]initWithIngredients:@[@"blueberries", @"coconut", @"dates", @"chia", @"spinach"] recipeImage:[UIImage imageNamed:@"berryrecipe2"] label:@"Raw Vegan Blueberry Coconut Breakfast Shake"];
+    NATRecipe *rawRaspberryBreakfastBar = [[NATRecipe alloc]initWithIngredients:@[@"coconut", @"vanilla", @"cinnamon", @"salt", @"walnuts", @"dates", @"raspberries", @"chia", @"cacao"] recipeImage:[UIImage imageNamed:@"berryrecipe3"] label:@"Raw Raspberry Breakfast Bar"];
+    NATRecipe *breakfastBerrySmoothieWithCacaoDrizzleAndChia = [[NATRecipe alloc]initWithIngredients:@[@"walnut milk", @"chia", @"banana", @"mango", @"strawberries", @"cacao", @"maple syrup", @"water"] recipeImage:[UIImage imageNamed:@"berryrecipe4"] label:@"Breakfast Berry Smoothie with Cacao Drizzle and Chia Pudding"];
+    NATRecipe *ultimateBlueberryAndBananaBreakfastSmoothie = [[NATRecipe alloc]initWithIngredients:@[@"banana", @"blueberries", @"water", @"chia", @"flax", @"oats", @"almond butter", @"dates"] recipeImage:[UIImage imageNamed:@"berryrecipe5"] label:@"Ultimate Blueberry and Banana Breakfast Smoothie"];
 
+                                           
     
-    
-    self.breakfastRecipeArray = @[auntyPsKaleSaladRecipe, avocadoBreakfastPuddingRecipe, avocadoBreakfastSaladRecipe, avocadoKaleSaladRecipe, eggBakedInAvocadoRecipe, kaleBananaSmoothieRecipe, kaleSaladWithBloodOrangesRecipe];
+    self.breakfastRecipeArray = @[auntyPsKaleSaladRecipe, avocadoBreakfastPuddingRecipe, avocadoBreakfastSaladRecipe, avocadoKaleSaladRecipe, eggBakedInAvocadoRecipe, kaleBananaSmoothieRecipe, kaleSaladWithBloodOrangesRecipe, berryBreakfastQuinoa, rawVeganBlueberryCoconutBreakfastShake, rawRaspberryBreakfastBar, breakfastBerrySmoothieWithCacaoDrizzleAndChia, ultimateBlueberryAndBananaBreakfastSmoothie];
     
     self.filteredBreakfastRecipeArray = self.breakfastRecipeArray;
     

@@ -14,7 +14,7 @@
 		<string>https://github.com/Noah-T/Breakfast-Superfoods.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Breakfast Superfoods.xcodeproj/project.xcworkspace</string>
+	<string>Breakfast Superfoods.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>8180A3E601BADA7332CBC970B712A9FEDF8B82C0</key>
