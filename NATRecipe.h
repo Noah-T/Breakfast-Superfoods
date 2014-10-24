@@ -15,8 +15,9 @@
 @property (strong, nonatomic)UIImage *recipeImage;
 @property (strong, nonatomic)NSData *recipeImageData;
 @property (strong, nonatomic)NSString *label;
+@property (strong, nonatomic)NSString *recipePreparation;
 
-- (instancetype)initWithIngredients:(NSArray *)ingredients recipeImage:(UIImage *)recipeImage label:(NSString *)label;
+- (instancetype)initWithIngredients:(NSArray *)ingredients recipeImage:(UIImage *)recipeImage label:(NSString *)label recipePreparation:(NSString *)recipePreparation;
 
 
 @end

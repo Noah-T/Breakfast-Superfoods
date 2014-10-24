@@ -317,6 +317,7 @@
                     <connections>
                         <outlet property="recipeImage" destination="9LG-aU-vAE" id="GHw-Io-ahB"/>
                         <outlet property="recipeLabel" destination="0cL-qc-Ov6" id="GFW-0Z-7wI"/>
+                        <outlet property="recipePreparationField" destination="OLe-zA-PRe" id="0i1-OF-1kN"/>
                         <outlet property="saveButton" destination="Uqt-jc-x5z" id="m5A-Jk-LEE"/>
                     </connections>
                 </viewController>
@@ -439,7 +440,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="PbE-hP-ot5"/>
         <segue reference="36F-WZ-Gvx"/>
-        <segue reference="XJF-ZP-xeH"/>
     </inferredMetricsTieBreakers>
 </document>

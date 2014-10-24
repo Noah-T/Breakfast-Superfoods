@@ -20,11 +20,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Breakfast Superfoods/NATRecipeCollectionViewController.m"
-            timestampString = "435793546.677261"
+            timestampString = "435878618.194138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
             landmarkName = "-setCurrentFilterString:"
             landmarkType = "5">
          </BreakpointContent>
@@ -36,11 +36,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Breakfast Superfoods/NATRecipeCollectionViewController.m"
-            timestampString = "435793546.677261"
+            timestampString = "435878618.194138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
             landmarkName = "-setCurrentFilterString:"
             landmarkType = "5">
          </BreakpointContent>
@@ -52,11 +52,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Breakfast Superfoods/NATRecipeCollectionViewController.m"
-            timestampString = "435793546.677261"
+            timestampString = "435878618.194138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
             landmarkName = "-setCurrentFilterString:"
             landmarkType = "5">
          </BreakpointContent>
@@ -68,11 +68,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Breakfast Superfoods/NATRecipeCollectionViewController.m"
-            timestampString = "435793546.677261"
+            timestampString = "435878618.194138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
             landmarkName = "-setCurrentFilterString:"
             landmarkType = "5">
          </BreakpointContent>
@@ -84,11 +84,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Breakfast Superfoods/NATRecipeCollectionViewController.m"
-            timestampString = "435793546.677261"
+            timestampString = "435878618.194138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
             landmarkName = "-setCurrentFilterString:"
             landmarkType = "5">
          </BreakpointContent>
@@ -100,11 +100,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Breakfast Superfoods/NATRecipeCollectionViewController.m"
-            timestampString = "435793546.677261"
+            timestampString = "435878618.194138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
             landmarkName = "-setCurrentFilterString:"
             landmarkType = "5">
          </BreakpointContent>
@@ -116,11 +116,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Breakfast Superfoods/NATRecipeCollectionViewController.m"
-            timestampString = "435793546.677261"
+            timestampString = "435878618.194138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
             landmarkName = "-setCurrentFilterString:"
             landmarkType = "5">
          </BreakpointContent>
@@ -132,11 +132,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Breakfast Superfoods/NATRecipeCollectionViewController.m"
-            timestampString = "435793546.677261"
+            timestampString = "435878618.194138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
             landmarkName = "-setCurrentFilterString:"
             landmarkType = "5">
             <Locations>
@@ -147,12 +147,12 @@
                   symbolName = "-[NATRecipeCollectionViewController setCurrentFilterString:]"
                   moduleName = "Breakfast Superfoods"
                   urlString = "file:///Users/noahteshu/Documents/Development/iOS/BreakfastSuperfoods/Breakfast-Superfoods/Breakfast%20Superfoods/NATRecipeCollectionViewController.m"
-                  timestampString = "435526858.126029"
+                  timestampString = "435878618.886527"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "100"
-                  endingLineNumber = "100"
-                  offsetFromSymbolStart = "277">
+                  startingLineNumber = "185"
+                  endingLineNumber = "185"
+                  offsetFromSymbolStart = "304">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -161,12 +161,12 @@
                   symbolName = "__60-[NATRecipeCollectionViewController setCurrentFilterString:]_block_invoke"
                   moduleName = "Breakfast Superfoods"
                   urlString = "file:///Users/noahteshu/Documents/Development/iOS/BreakfastSuperfoods/Breakfast-Superfoods/Breakfast%20Superfoods/NATRecipeCollectionViewController.m"
-                  timestampString = "435526858.126134"
+                  timestampString = "435878618.886621"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "100"
-                  endingLineNumber = "100"
-                  offsetFromSymbolStart = "107">
+                  startingLineNumber = "185"
+                  endingLineNumber = "185"
+                  offsetFromSymbolStart = "108">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -178,11 +178,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Breakfast Superfoods/NATRecipeCollectionViewController.m"
-            timestampString = "435793546.677261"
+            timestampString = "435878618.194138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
             landmarkName = "-setCurrentFilterString:"
             landmarkType = "5">
          </BreakpointContent>
@@ -194,11 +194,57 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Breakfast Superfoods/NATRecipeCollectionViewController.m"
-            timestampString = "435793546.677261"
+            timestampString = "435878618.194138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
+            landmarkName = "-setCurrentFilterString:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[NATRecipeCollectionViewController setCurrentFilterString:]"
+                  moduleName = "Breakfast Superfoods"
+                  urlString = "file:///Users/noahteshu/Documents/Development/iOS/BreakfastSuperfoods/Breakfast-Superfoods/Breakfast%20Superfoods/NATRecipeCollectionViewController.m"
+                  timestampString = "435878618.887611"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "185"
+                  endingLineNumber = "185"
+                  offsetFromSymbolStart = "304">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__60-[NATRecipeCollectionViewController setCurrentFilterString:]_block_invoke"
+                  moduleName = "Breakfast Superfoods"
+                  urlString = "file:///Users/noahteshu/Documents/Development/iOS/BreakfastSuperfoods/Breakfast-Superfoods/Breakfast%20Superfoods/NATRecipeCollectionViewController.m"
+                  timestampString = "435878618.887705"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "185"
+                  endingLineNumber = "185"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Breakfast Superfoods/NATRecipeCollectionViewController.m"
+            timestampString = "435878618.194138"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "187"
+            endingLineNumber = "187"
             landmarkName = "-setCurrentFilterString:"
             landmarkType = "5">
          </BreakpointContent>
@@ -210,11 +256,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Breakfast Superfoods/NATRecipeCollectionViewController.m"
-            timestampString = "435793546.677261"
+            timestampString = "435878618.194138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "189"
+            endingLineNumber = "189"
             landmarkName = "-setCurrentFilterString:"
             landmarkType = "5">
          </BreakpointContent>
@@ -226,11 +272,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Breakfast Superfoods/NATRecipeCollectionViewController.m"
-            timestampString = "435793546.677261"
+            timestampString = "435878618.194138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "191"
+            endingLineNumber = "191"
             landmarkName = "-setCurrentFilterString:"
             landmarkType = "5">
          </BreakpointContent>
@@ -242,11 +288,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Breakfast Superfoods/NATRecipeCollectionViewController.m"
-            timestampString = "435793546.677261"
+            timestampString = "435878618.194138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
+            startingLineNumber = "193"
+            endingLineNumber = "193"
             landmarkName = "-setCurrentFilterString:"
             landmarkType = "5">
          </BreakpointContent>
@@ -258,11 +304,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Breakfast Superfoods/NATRecipeCollectionViewController.m"
-            timestampString = "435793546.677261"
+            timestampString = "435878618.194138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
+            startingLineNumber = "194"
+            endingLineNumber = "194"
             landmarkName = "-setCurrentFilterString:"
             landmarkType = "5">
          </BreakpointContent>
@@ -274,11 +320,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Breakfast Superfoods/NATRecipeCollectionViewController.m"
-            timestampString = "435793546.677261"
+            timestampString = "435878618.194138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
             landmarkName = "-setCurrentFilterString:"
             landmarkType = "5">
          </BreakpointContent>
@@ -290,59 +336,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Breakfast Superfoods/NATRecipeCollectionViewController.m"
-            timestampString = "435793546.677261"
+            timestampString = "435878618.194138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
-            landmarkName = "-setCurrentFilterString:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Breakfast Superfoods/NATRecipeCollectionViewController.m"
-            timestampString = "435793546.677261"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
-            landmarkName = "-setCurrentFilterString:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Breakfast Superfoods/NATRecipeCollectionViewController.m"
-            timestampString = "435793546.677261"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
-            landmarkName = "-setCurrentFilterString:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Breakfast Superfoods/NATRecipeCollectionViewController.m"
-            timestampString = "435793546.677261"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
+            startingLineNumber = "197"
+            endingLineNumber = "197"
             landmarkName = "-setCurrentFilterString:"
             landmarkType = "5">
             <Locations>
@@ -353,12 +351,12 @@
                   symbolName = "__60-[NATRecipeCollectionViewController setCurrentFilterString:]_block_invoke"
                   moduleName = "Breakfast Superfoods"
                   urlString = "file:///Users/noahteshu/Documents/Development/iOS/BreakfastSuperfoods/Breakfast-Superfoods/Breakfast%20Superfoods/NATRecipeCollectionViewController.m"
-                  timestampString = "435526858.130585"
+                  timestampString = "435878618.88932"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "109"
-                  endingLineNumber = "109"
-                  offsetFromSymbolStart = "746">
+                  startingLineNumber = "197"
+                  endingLineNumber = "197"
+                  offsetFromSymbolStart = "765">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -367,12 +365,12 @@
                   symbolName = "__60-[NATRecipeCollectionViewController setCurrentFilterString:]_block_invoke"
                   moduleName = "Breakfast Superfoods"
                   urlString = "file:///Users/noahteshu/Documents/Development/iOS/BreakfastSuperfoods/Breakfast-Superfoods/Breakfast%20Superfoods/NATRecipeCollectionViewController.m"
-                  timestampString = "435526858.130681"
+                  timestampString = "435878618.889412"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "109"
-                  endingLineNumber = "109"
-                  offsetFromSymbolStart = "791">
+                  startingLineNumber = "197"
+                  endingLineNumber = "197"
+                  offsetFromSymbolStart = "813">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -384,11 +382,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Breakfast Superfoods/NATRecipeCollectionViewController.m"
-            timestampString = "435793546.677261"
+            timestampString = "435878618.194138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
             landmarkName = "-setCurrentFilterString:"
             landmarkType = "5">
          </BreakpointContent>
@@ -400,11 +398,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Breakfast Superfoods/NATRecipeCollectionViewController.m"
-            timestampString = "435793546.677261"
+            timestampString = "435878618.194138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
             landmarkName = "-setCurrentFilterString:"
             landmarkType = "5">
          </BreakpointContent>
@@ -416,11 +414,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Breakfast Superfoods/NATRecipeCollectionViewController.m"
-            timestampString = "435793546.677261"
+            timestampString = "435878618.194138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
             landmarkName = "-setCurrentFilterString:"
             landmarkType = "5">
          </BreakpointContent>
@@ -432,12 +430,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Breakfast Superfoods/NATRecipeCollectionViewController.m"
-            timestampString = "435793546.677261"
+            timestampString = "435878618.194138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
+            startingLineNumber = "201"
+            endingLineNumber = "201"
             landmarkName = "-setCurrentFilterString:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Breakfast Superfoods/NATRecipeCollectionViewController.m"
+            timestampString = "435878618.194138"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
+            landmarkName = "-setCurrentFilterString:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Breakfast Superfoods/NATRecipeCollectionViewController.m"
+            timestampString = "435878618.194138"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
+            landmarkName = "-setCurrentFilterString:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Breakfast Superfoods/NATRecipeCollectionViewController.m"
+            timestampString = "435878618.194138"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

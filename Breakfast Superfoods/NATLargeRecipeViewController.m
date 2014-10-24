@@ -30,10 +30,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.recipeLabel.text = self.recipeLabeltext;
-    self.recipeImage.image = self.recipeImageImage;
     
-    [self.saveButton addTarget:self action:@selector(saveButtonPressed) forControlEvents:UIControlEventTouchUpInside];
 
     
 }
@@ -47,6 +44,12 @@
     } else {
         [self.saveButton setTitle:@"Save" forState:UIControlStateNormal];
     }
+    
+    self.recipeLabel.text = self.recipeLabeltext;
+    self.recipeImage.image = self.recipeImageImage;
+    self.recipePreparationField.text = self.recipe.recipePreparation;
+    
+    [self.saveButton addTarget:self action:@selector(saveButtonPressed) forControlEvents:UIControlEventTouchUpInside];
 }
 
 

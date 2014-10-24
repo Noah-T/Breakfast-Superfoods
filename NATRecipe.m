@@ -10,13 +10,15 @@
 
 @implementation NATRecipe
 
-- (instancetype)initWithIngredients:(NSArray *)ingredients recipeImage:(UIImage *)recipeImage label:(NSString *)label
+- (instancetype)initWithIngredients:(NSArray *)ingredients recipeImage:(UIImage *)recipeImage label:(NSString *)label recipePreparation:(NSString *)recipePreparation
 {
     self = [super init];
     
     _ingredients = ingredients;
     _recipeImage = recipeImage;
     _label = label;
+    _recipePreparation = recipePreparation;
+    
     
     return self;
 }

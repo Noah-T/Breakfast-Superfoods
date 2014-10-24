@@ -17,6 +17,8 @@
 @property (nonatomic, strong) IBOutlet UIImageView *recipeImage;
 @property (nonatomic, strong) UIImage *recipeImageImage;
 @property (nonatomic, strong) NATRecipe *recipe;
+@property (weak, nonatomic) IBOutlet UITextView *recipePreparationField;
+
 
 - (IBAction)postToTwitter:(id)sender;
 - (IBAction)postToFacebook:(id)sender;
