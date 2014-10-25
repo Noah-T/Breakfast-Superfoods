@@ -60,7 +60,7 @@ static NSString *const kNATRecipeCellIdentifier = @"kNATRecipeCellIdentifier";
                                           "1 tablespoon honey\n"
                                           "2 to 3 tablespoons granola or crushed almonds\n\n"
                                           "Blend avocado, milk, and honey in a blender (or food processor) until smooth. Garnish with granola or almonds. You can also chill for about an hour for a refreshing coolness."];
-    NATRecipe *blackBeanEggAndAvocadoWrap = [[NATRecipe alloc]initWithIngredients:@[@"wheat tortilla", @"black beans"@"egg", @"avocado", @"cheddar cheese", @"salsa", @"barbecue sauce"] recipeImage:[UIImage imageNamed:@"avocadoRecipe4"] label:@"Black Bean, Egg, and Avocado Wrap" recipePreparation:@"Serves 1\n"
+    NATRecipe *blackBeanEggAndAvocadoWrap = [[NATRecipe alloc]initWithIngredients:@[@"wheat tortilla", @"black beans",@"egg", @"avocado", @"cheddar cheese", @"salsa", @"barbecue sauce"] recipeImage:[UIImage imageNamed:@"avocadoRecipe4"] label:@"Black Bean, Egg, and Avocado Wrap" recipePreparation:@"Serves 1\n"
                                              "1 whole wheat tortilla (or 2 small)\n"
                                              "1/2 cup canned black beans, drained and rinsed\n"
                                              "1 egg\n"
@@ -143,8 +143,77 @@ static NSString *const kNATRecipeCellIdentifier = @"kNATRecipeCellIdentifier";
                                                               
                                                               "Simply pit the dates then place all of the ingredients together in the blender and blend until smooth, this should just take a minute or two. If you like it a little runnier, add some extra water at the end.\n"
                                                               "Sip and enjoy!\n"];
+    
+    //eggs
+    NATRecipe *eggsWithSpinachAndCremeFraiche = [[NATRecipe alloc]initWithIngredients:@[@"butter", @"shallots", @"spinach", @"eggs", @"creme fraiche", @"sour cream", @"lemon juice", @"cayenne pepper", @"bread", @"toast"] recipeImage:[UIImage imageNamed:@"eggRecipe1"] label:@"Eggs with Spinach and Creme Fraiche" recipePreparation:@"INGREDIENTS\n"
+                                                 "3 tablespoons unsalted butter\n"
+                                                 "1 medium shallot, minced\n"
+                                                 "1 1/2 pounds spinach (about 2 medium bunches), washed and thoroughly dried\n"
+                                                 "6 large eggs\n"
+                                                 "4 ounces crème fraîche or sour cream\n"
+                                                 "1 1/2 teaspoons freshly squeezed lemon juice\n"
+                                                 "1/8 teaspoon ground cayenne pepper\n"
+                                                 "6 pieces toast\n\n"
+                                                 
+                                                 "INSTRUCTIONS\n"
+                                                 "Melt butter in a 12-inch frying pan over medium heat. Once butter foams, add shallot and cook, stirring occasionally, until softened, about 5 minutes.\n\n"
+                                                 "Add spinach, season well with salt and freshly ground black pepper, and cook until just wilted, about 3 minutes. Make six indentations in spinach, crack an egg into each, cover the pan, and cook eggs to desired doneness. Meanwhile, combine crème fraîche or sour cream, lemon juice, and cayenne in a small bowl.\n\n"
+                                                 "To serve, divide spinach and eggs among pieces of toast, place a dollop of cream mixture over each egg, and season with freshly ground black pepper."];
+    
+    NATRecipe *poachedEggsWithRoastedTomatoes = [[NATRecipe alloc]initWithIngredients:@[@"cherry tomatoes", @"olive oil", @"salt", @"black pepper", @"thyme leaves", @"eggs", @"whole wheat english muffin"] recipeImage:[UIImage imageNamed:@"eggRecipe2"] label:@"Poached Eggs with Roasted Tomatoes" recipePreparation:@"Ingredients\n"
+                                                 "1 pint cherry tomatoes (10 ounces)\n"
+                                                 "1 tablespoon extra-virgin olive oil\n"
+                                                 "Kosher salt and freshly ground black pepper\n"
+                                                 "1 tablespoon fresh thyme leaves, plus more for garnish\n"
+                                                 "2 large eggs\n"
+                                                 "1 whole-wheat English muffin, split and toasted\n\n"
+                                                 "Directions\n"
+                                                 "Heat oven to 425 degrees. Arrange tomatoes in a baking dish. Drizzle with oil and season with salt and pepper. Toss with thyme. Roast until tomatoes begin to burst, about 20 minutes. Scrape tomatoes and any juices into a bowl and let cool slightly.\n"
+                                                 "In a medium straight-sided skillet, heat 2 inches of water over medium until bubbles cover bottom and sides of pan. Crack each egg into a separate small bowl. Gently pour eggs into pan, leaving room between them. Cook eggs, undisturbed, until white is just set and yolk is still loose, 4 to 5 minutes. Use a rubber spatula to gently release eggs from bottom of pan, if necessary. Using a slotted spoon, remove eggs from water. Blot bottom of spoon on a paper towel to remove excess water before serving.\n"
+                                                 "Serve eggs over English muffin halves. Season with salt and pepper. Top with roasted tomatoes.\n"];
+    
+    NATRecipe *watercressWithGarlicAndScrambledEggs = [[NATRecipe alloc]initWithIngredients:@[@"olive oil", @"garlic", @"watercress", @"eggs", @"salt", @"black pepper"] recipeImage:[UIImage imageNamed:@"eggRecipe3"] label:@"Watercress with Garlic and Scrambled Eggs" recipePreparation:@"Ingredients/n"
+                                                       "1 teaspoon extra-virgin olive oil\n"
+                                                       "1 clove garlic, minced\n"
+                                                       "1 cup watercress, stems removed\n"
+                                                       "2 large eggs\n"
+                                                       "Coarse salt and freshly ground black pepper\n\n"
+                                                       "Directions\n"
+                                                       "Heat oil in a small skillet over medium heat. Add garlic and cook until fragrant, about 1 minute. Add watercress and cook, stirring, until just wilted. Remove from pan and set aside. Lower heat to medium-low.\n\n"
+                                                       "Whisk eggs and season with salt and pepper. Pour eggs into pan and cook, stirring, until just set. Return watercress to pan and stir. Serve immediately."];
+    NATRecipe *hardBoiledEggsWithAvocado = [[NATRecipe alloc]initWithIngredients:@[@"eggs", @"avocado", @"salt", @"ground pepper", @"olive oil"] recipeImage:[UIImage imageNamed:@"eggRecipe4"] label:@"Hard-Boiled Eggs with Avocado" recipePreparation:@"INGREDIENTS\n"
+                                            
+                                            "8 large eggs\n"
+                                            "2 avocados, preferably Hass\n"
+                                            "1/4 teaspoon coarse salt\n"
+                                            "Freshly ground pepper\n"
+                                            "1 tablespoon extra-virgin olive oil\n\n"\
+                                            
+                                        
+                                            "DIRECTIONS\n"
+                                            "1.	Cover eggs with cold water in a large saucepan; bring to a boil. Remove pan from heat. Let eggs stand, covered, 8 minutes; transfer with a slotted spoon to an ice-water bath, and let cool. Peel eggs. Separate yolks from whites (reserve yolks for another use).Tear whites into 1-inch pieces; divide among four bowls\n"
+                                            "2.	Halve and pit the avocados. Using a spoon, scrape out pieces; divide among bowls with egg whites. Divide salt among servings, and season with pepper. Drizzle each serving with 3/4 teaspoon oil.\n"];
+    
+    NATRecipe *avocadosYHuevosCaliente = [[NATRecipe alloc]initWithIngredients:@[@"cumin", @"olive oil", @"onion", @"jalapeno", @"tomatoes", @"garlic", @"salt", @"avocado", @"eggs", @"cilantro", @"corn tortillas", @"lime"] recipeImage:[UIImage imageNamed:@"eggRecipe5"] label:@"Avocados y Huevoes Caliente" recipePreparation:@"Serves 2\n"
+                                          "1 teaspoon cumin seed\n"
+                                          "2 teaspoons olive oil\n"
+                                          "1/2 large onion, chopped\n"
+                                          "1 jalapeño, sliced (save 2-4 slices for garnish)\n"
+                                          "1 1/2 cups diced tomatoes (canned or fresh)\n"
+                                          "1 clove garlic, sliced very thin\n"
+                                          "Kosher salt\n"
+                                          "1 large avocado\n"
+                                          "2 eggs\n"
+                                          "2 tablespoons chopped cilantro\n"
+                                          "Warm corn tortillas (optional)\n"
+                                          "Lime wedges\n\n"
+                                          "1.	Pre-heat oven to 425°.\n"
+                                          "2.	Heat medium oven safe skillet over medium heat. Toast cumin in pan until fragrant. Add olive oil to pan. Sauté onion and jalapeno in hot olive oil until vegetables begin to soften. Add tomatoes, garlic, and 1/2 teaspoon salt; simmer about 5 minutes to let flavors combine and liquid reduce slightly. If tomatoes aren’t very juicy you may need to add a tablespoon or 2 of water.\n"
+                                          "3.	While the vegetables simmer cut avocado in half, remove pit and peel. If needed, scoop out a little more avocado to make room for one egg in each half.\n"
+                                          "4.	Take the simmering salsa off the heat; add salt to taste. Make 2 small wells in the salsa and nestle in the avocado cut side up. Crack one egg into each avocado half. Sprinkle eggs with a small pinch of salt. Bake in the oven until the egg is done to your liking. 15 minutes yields cooked whites and a yolk that is slightly runny in the middle.\n"
+                                          "5.	Garnish with cilantro, jalapeño and lime wedges. Serve with warm corn tortillas if desired.\n"];
 
-    self.breakfastRecipeArray = @[avocadoToast, eggInAvocado, avocadoBreakfastPudding, blackBeanEggAndAvocadoWrap, smokedSalmonAvocadoToast, berryBreakfastQuinoa, rawVeganBlueberryCoconutBreakfastShake, rawRaspberryBreakfastBar, breakfastBerrySmoothieWithCacaoDrizzleAndChia, ultimateBlueberryAndBananaBreakfastSmoothie];
+    self.breakfastRecipeArray = @[avocadoToast, eggInAvocado, avocadoBreakfastPudding, blackBeanEggAndAvocadoWrap, smokedSalmonAvocadoToast, berryBreakfastQuinoa, rawVeganBlueberryCoconutBreakfastShake, rawRaspberryBreakfastBar, breakfastBerrySmoothieWithCacaoDrizzleAndChia, ultimateBlueberryAndBananaBreakfastSmoothie, eggsWithSpinachAndCremeFraiche, poachedEggsWithRoastedTomatoes, watercressWithGarlicAndScrambledEggs, hardBoiledEggsWithAvocado, avocadosYHuevosCaliente];
     
     self.filteredBreakfastRecipeArray = self.breakfastRecipeArray;
     
