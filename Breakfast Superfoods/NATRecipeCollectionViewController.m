@@ -212,8 +212,33 @@ static NSString *const kNATRecipeCellIdentifier = @"kNATRecipeCellIdentifier";
                                           "3.	While the vegetables simmer cut avocado in half, remove pit and peel. If needed, scoop out a little more avocado to make room for one egg in each half.\n"
                                           "4.	Take the simmering salsa off the heat; add salt to taste. Make 2 small wells in the salsa and nestle in the avocado cut side up. Crack one egg into each avocado half. Sprinkle eggs with a small pinch of salt. Bake in the oven until the egg is done to your liking. 15 minutes yields cooked whites and a yolk that is slightly runny in the middle.\n"
                                           "5.	Garnish with cilantro, jalapeño and lime wedges. Serve with warm corn tortillas if desired.\n"];
+    
+    NATRecipe *kaleAvocadoSalad = [[NATRecipe alloc]initWithIngredients:@[@"kale", @"avocado", @"lemon"] recipeImage:[UIImage imageNamed:@"kaleRecipe1"] label:@"Kale Avocado Salad" recipePreparation:@"INGREDIENTS\n"
+                         "1 medium bunch kale (any type), stemmed and shredded\n"
+                         "1 avocado, pitted and flesh removed\n"
+                         "1 lemon, juiced\n\n"
+                         
+                         "DIRECTIONS\n"
+                         "1.	In mixing bowl add the kale, avocado and lemon juice. With your hands, press to soften the avocado until thoroughly mixed.\n"
+                         "2.	Add salt and pepper to taste.\n"
+                         "3.	Toss with other ingredients you'd like to add or enjoy as is.\n"];
+    NATRecipe *auntyPsKaleSalad = [[NATRecipe alloc]initWithIngredients:@[@"kale", @"lemon", @"avocado", @"ginger", @"olive oil"] recipeImage:[UIImage imageNamed:@"kaleRecipe2"] label:@"Aunty P's Kale Salad" recipePreparation:@"Ingredients\n"
+                                   "2 bunches organic kale (I used dino kale), any variety\n"
+                                   "1 large organic lemon, peel and reserve the zest for another recipe\n"
+                                   "1 large RIPE organic avocado, peel and pit\n"
+                                   "2 TBSP grated organic mature ginger root, unpeeled\n"
+                                   "optional:\n"
+                                   "2 TBSP organic cold pressed olive oil\n"
+                                   "fresh cracked pink salt and pepper to taste\n\n"
+                                   "Instructions\n"
+                                   "1) Wash, trim off the ends and small chop the kale (including the rib) and place in a large mixing bowl.\n"
+                                   "2) Juice the lemon over the kale.\n"
+                                   "3) Now add the grated ginger and avocado (and olive oil if you are using it).\n"
+                                   "4) Use your hands to massage and mash this into the kale leaves. Work this until the total amount is 1/2 of the original amount in your bowl.\n"
+                                   "5) Salt and pepper to taste if so desired.\n"
+                                   "6) Allow the salad to rest for 15 minutes, serve and ENJOY!!\n"];
 
-    self.breakfastRecipeArray = @[avocadoToast, eggInAvocado, avocadoBreakfastPudding, blackBeanEggAndAvocadoWrap, smokedSalmonAvocadoToast, berryBreakfastQuinoa, rawVeganBlueberryCoconutBreakfastShake, rawRaspberryBreakfastBar, breakfastBerrySmoothieWithCacaoDrizzleAndChia, ultimateBlueberryAndBananaBreakfastSmoothie, eggsWithSpinachAndCremeFraiche, poachedEggsWithRoastedTomatoes, watercressWithGarlicAndScrambledEggs, hardBoiledEggsWithAvocado, avocadosYHuevosCaliente];
+    self.breakfastRecipeArray = @[avocadoToast, eggInAvocado, avocadoBreakfastPudding, blackBeanEggAndAvocadoWrap, smokedSalmonAvocadoToast, berryBreakfastQuinoa, rawVeganBlueberryCoconutBreakfastShake, rawRaspberryBreakfastBar, breakfastBerrySmoothieWithCacaoDrizzleAndChia, ultimateBlueberryAndBananaBreakfastSmoothie, eggsWithSpinachAndCremeFraiche, poachedEggsWithRoastedTomatoes, watercressWithGarlicAndScrambledEggs, hardBoiledEggsWithAvocado, avocadosYHuevosCaliente, kaleAvocadoSalad, auntyPsKaleSalad];
     
     self.filteredBreakfastRecipeArray = self.breakfastRecipeArray;
     
