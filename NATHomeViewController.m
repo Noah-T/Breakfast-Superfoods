@@ -29,6 +29,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES];
     self.breakfastRecipeArray = [NSMutableArray array];
     for (NSData *data in [[NSUserDefaults standardUserDefaults]objectForKey:kKeyToFavoritesArray]) {
         NATRecipe *recipe = [NSKeyedUnarchiver unarchiveObjectWithData:data];

@@ -40,7 +40,7 @@ static NSString *const kNATRecipeCellIdentifier = @"kNATRecipeCellIdentifier";
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-        
+    
     
     //avocado
     NATRecipe *avocadoToast = [[NATRecipe alloc]initWithIngredients:@[@"bread", @"avocado", @"lime", @"red pepper flakes", @"grape tomatoes", @"olive oil", @"salt", @"ground pepper"] recipeImage:[UIImage imageNamed:@"avocadoRecipe1"] label:@"Avocado Toast" recipePreparation:@"2 slices of multi-grain bread\n"
@@ -76,8 +76,8 @@ static NSString *const kNATRecipeCellIdentifier = @"kNATRecipeCellIdentifier";
                                            "juice of 1/2 lemon\n"
                                            "2 ounces smoked salmon\n"
                                            "Toast bread until golden brown. While the bread is in the toaster, mash the avocado with the lemon juice. Spread the avocado mixture on the toast and top with the smoked salmon."];
-
-
+    
+    
     
     //berries
     NATRecipe *berryBreakfastQuinoa = [[NATRecipe alloc]initWithIngredients:@[@"milk", @"yogurt", @"chia", @"quinoa", @"fruit", @"berries", @"almonds", @"cinnamon"] recipeImage:[UIImage imageNamed:@"berryrecipe1"] label:@"Berry Breakfast Quinoa" recipePreparation:@"1/4 cup milk\n2 containers (6 oz each) Yoplait® Original 99% Fat Free French vanilla, strawberry or harvest peach yogurt\n"
@@ -189,7 +189,7 @@ static NSString *const kNATRecipeCellIdentifier = @"kNATRecipeCellIdentifier";
                                             "Freshly ground pepper\n"
                                             "1 tablespoon extra-virgin olive oil\n\n"\
                                             
-                                        
+                                            
                                             "DIRECTIONS\n"
                                             "1.	Cover eggs with cold water in a large saucepan; bring to a boil. Remove pan from heat. Let eggs stand, covered, 8 minutes; transfer with a slotted spoon to an ice-water bath, and let cool. Peel eggs. Separate yolks from whites (reserve yolks for another use).Tear whites into 1-inch pieces; divide among four bowls\n"
                                             "2.	Halve and pit the avocados. Using a spoon, scrape out pieces; divide among bowls with egg whites. Divide salt among servings, and season with pepper. Drizzle each serving with 3/4 teaspoon oil.\n"];
@@ -214,14 +214,14 @@ static NSString *const kNATRecipeCellIdentifier = @"kNATRecipeCellIdentifier";
                                           "5.	Garnish with cilantro, jalapeño and lime wedges. Serve with warm corn tortillas if desired.\n"];
     
     NATRecipe *kaleAvocadoSalad = [[NATRecipe alloc]initWithIngredients:@[@"kale", @"avocado", @"lemon"] recipeImage:[UIImage imageNamed:@"kaleRecipe1"] label:@"Kale Avocado Salad" recipePreparation:@"INGREDIENTS\n"
-                         "1 medium bunch kale (any type), stemmed and shredded\n"
-                         "1 avocado, pitted and flesh removed\n"
-                         "1 lemon, juiced\n\n"
-                         
-                         "DIRECTIONS\n"
-                         "1.	In mixing bowl add the kale, avocado and lemon juice. With your hands, press to soften the avocado until thoroughly mixed.\n"
-                         "2.	Add salt and pepper to taste.\n"
-                         "3.	Toss with other ingredients you'd like to add or enjoy as is.\n"];
+                                   "1 medium bunch kale (any type), stemmed and shredded\n"
+                                   "1 avocado, pitted and flesh removed\n"
+                                   "1 lemon, juiced\n\n"
+                                   
+                                   "DIRECTIONS\n"
+                                   "1.	In mixing bowl add the kale, avocado and lemon juice. With your hands, press to soften the avocado until thoroughly mixed.\n"
+                                   "2.	Add salt and pepper to taste.\n"
+                                   "3.	Toss with other ingredients you'd like to add or enjoy as is.\n"];
     NATRecipe *auntyPsKaleSalad = [[NATRecipe alloc]initWithIngredients:@[@"kale", @"lemon", @"avocado", @"ginger", @"olive oil"] recipeImage:[UIImage imageNamed:@"kaleRecipe2"] label:@"Aunty P's Kale Salad" recipePreparation:@"Ingredients\n"
                                    "2 bunches organic kale (I used dino kale), any variety\n"
                                    "1 large organic lemon, peel and reserve the zest for another recipe\n"
@@ -237,42 +237,135 @@ static NSString *const kNATRecipeCellIdentifier = @"kNATRecipeCellIdentifier";
                                    "4) Use your hands to massage and mash this into the kale leaves. Work this until the total amount is 1/2 of the original amount in your bowl.\n"
                                    "5) Salt and pepper to taste if so desired.\n"
                                    "6) Allow the salad to rest for 15 minutes, serve and ENJOY!!\n"];
-
-    self.breakfastRecipeArray = @[avocadoToast, eggInAvocado, avocadoBreakfastPudding, blackBeanEggAndAvocadoWrap, smokedSalmonAvocadoToast, berryBreakfastQuinoa, rawVeganBlueberryCoconutBreakfastShake, rawRaspberryBreakfastBar, breakfastBerrySmoothieWithCacaoDrizzleAndChia, ultimateBlueberryAndBananaBreakfastSmoothie, eggsWithSpinachAndCremeFraiche, poachedEggsWithRoastedTomatoes, watercressWithGarlicAndScrambledEggs, hardBoiledEggsWithAvocado, avocadosYHuevosCaliente, kaleAvocadoSalad, auntyPsKaleSalad];
+    NATRecipe *kaleSaladWithBloodOrangeAndMeyerLemon = [[NATRecipe alloc]initWithIngredients:@[@"black kale", @"blood oranges", @"lemon zest", @"shallots", @"olive oil", @"salt", @"black pepper"] recipeImage:[UIImage imageNamed:@"kaleRecipe3"] label:@"Kale Salad with Blood Orange and Meyer Lemon" recipePreparation:@"1 bunch black kale (about 1 pound)\n"
+                                                        "4 small blood oranges, segmented, juice reserved (about 3 tablespoons juice)\n"
+                                                        "Zest of 1 Meyer lemon (about two teaspoons)\n"
+                                                        "1 large shallot, finely chopped (about 2 tablespoons)\n"
+                                                        "1/4 cup extra-virgin olive oil\n"
+                                                        "Kosher salt and freshly ground black pepper\n\n"
+                                                        "Wash kale and pat off excess water. If the center stems are tender enough to eat, simply trim the bottom inch or two. If the center stems are thick or tough, cut or tear them out and discard or save for another dish. Slice leaves crosswise into 1/4-inch-wide ribbons.\n\n"
+                                                        "In a large bowl, whisk together the blood orange juice, Meyer lemon zest, shallots, olive oil, 1/4 teaspoon salt, and a good crack of black pepper. Add the kale and, using your hands, massage the dressing into the leaves. Add the blood orange segments and toss to combine.\n\n"
+                                                        "Let stand for 20 minutes. Taste and season with more salt and pepper, if desired.\n"];
+    NATRecipe *garlickyKaleWithFriedEggsAndSalsa = [[NATRecipe alloc]initWithIngredients:@[@"olive oil", @"garlic", @"kale", @"salt", @"black pepper", @"eggs", @"pico de gallo", @"salsa"] recipeImage:[UIImage imageNamed:@"kaleRecipe4"] label:@"Garlicky Kale with Fried Eggs and Salsa" recipePreparation:@"Ingredients:\n"
+                                                    "1 T + 1 t olive oil, divided\n"
+                                                    "1-2 large garlic cloves, finely chopped\n"
+                                                    "2 c (packed) chopped fresh kale\n"
+                                                    "Salt & pepper\n"
+                                                    "2-4 eggs\n"
+                                                    "4-6 T pico de gallo or salsa fresca\n\n"
+                                                    "Directions:\n"
+                                                    "1. Heat 1 tablespoon of oil in a large skillet. Add the garlic and cook until fragrant and just golden brown. Add the kale, sprinkle with salt & pepper, and sautee for 1-2 minutes only, until the kale begins to soften. Remove from heat. The residual heat from the pan will continue to cook the kale without overdoing it.\n"
+                                                    "2. In a separate pan, heat the rest of the oil and add the eggs. Fry until they’re done to your liking, then remove from heat.\n"
+                                                    "3. Place a generous amount of garlicky kale on a plate. Top with the eggs, add as much salsa as you like, and enjoy!\n"];
+    NATRecipe *kaleBerryAndAcaiPowerSmoothie = [[NATRecipe alloc]initWithIngredients:@[@"banana", @"blueberries", @"strawberries", @"kale", @"almond milk", @"water", @"flax seed", @"hemp powder", @"chia seeds", @"acai", @"cinnamon"] recipeImage:[UIImage imageNamed:@"kaleRecipe5"] label:@"Kale, Berry and Acai Power Smoothie" recipePreparation:@"Makes 1 large glass\n"
+                                                "- 1 ripe banana\n"
+                                                "-1/3 of a cup of blueberries\n"
+                                                "-1/3 of a cup of strawberries\n"
+                                                "- 1/2 a cup of kale leaves (remove the hard parts of the stalks)\n"
+                                                "- 1/4 of a cup of almond milk or water\n"
+                                                "- 1 tablespoon of ground flax seed\n"
+                                                "- 1 tablespoon of hemp powder\n"
+                                                "- 1 tablespoon of chia seeds\n"
+                                                "- 1 tablespoon of acai\n"
+                                                "- 1 teaspoon of cinnamon\n\n"
+                                                "Simply place all the ingredients in a blender together, removing the banana form the peel first of course, then blend into a delicious mix. Depending how liquid you like your smoothie then you may want to add a little more water.\n"
+                                                "If you’re craving a crunch then sprinkle some extra chia seeds, oats and some hemp seeds on the top."];
+    //oatmeal
+    NATRecipe *oatmealCasserole = [[NATRecipe alloc]initWithIngredients:@[@"oats", @"almonds", @"strawberries", @"brown sugar", @"salt", @"cinnamon", @"eggs", @"milk", @"butter"] recipeImage:[UIImage imageNamed:@"oatmealRecipe1"] label:@"Oatmeal Casserole" recipePreparation:@"Ingredients\n"
+                                   "1 1/2 cups rolled oats\n"
+                                   "1/2 cup sliced almonds\n"
+                                   "20 ounces strawberries, hulled and quartered\n"
+                                   "1/3 cup plus 3 tablespoons light brown sugar, plus more for serving\n"
+                                   "1/4 teaspoon salt\n"
+                                   "1/4 teaspoon cinnamon\n"
+                                   "1 large egg\n"
+                                   "1 3/4 cups milk\n"
+                                   "2 tablespoons (1 ounce) unsalted butter, melted, plus extra for greasing dish\n\n"
+                                   "Procedures\n"
+                                   "1. Adjust oven rack to middle position and preheat oven to 350°F. Lightly grease shallow 2-quart baking dish. Scatter oats, almonds, and strawberries into baking dish.\n"
+                                   "2. Whisk 1/3 cup plus 2 tablespoons brown sugar, salt, cinnamon, egg, milk, and melted butter in medium bowl until combined. Pour into baking dish. Using spoon, gently press oats into liquid to moisten evenly.\n"
+                                   "3. Scatter remaining tablespoon brown sugar over top and bake until center is just set, about 30 minutes. Serve immediately, passing extra brown sugar at the table.\n"];
+    NATRecipe *oatmealWithBananaAndWalnuts = [[NATRecipe alloc]initWithIngredients:@[@"oats", @"water", @"banana", @"walnuts", @"cinnamon"] recipeImage:[UIImage imageNamed:@"oatmealRecipe2"] label:@"Oatmeal with Banana and Walnuts" recipePreparation:@"Ingredients\n"
+                                              "1/2 cup old-fashioned rolled oats\n"
+                                              "1 cup water\n"
+                                              "1 banana, sliced\n"
+                                              "1 tablespoon chopped walnuts\n"
+                                              "1 teaspoon ground cinnamon\n\n"
+                                              "Preparation\n"
+                                              "1. Combine oats and 1 cup water in a small microwave-safe bowl. Microwave on high 3 minutes.\n"
+                                              "2. Top with banana slices, walnuts, and cinnamon.\n"];
+    NATRecipe *savoryOatmealWithSoftCookedEgg = [[NATRecipe alloc]initWithIngredients:@[@"oats", @"salt", @"ground pepper", @"cooking spray", @"eggs", @"cheddar cheese", @"scallions"] recipeImage:[UIImage imageNamed:@"oatmealRecipe3"] label:@"Savory Oatmeal with Soft-Cooked Egg" recipePreparation:@"INGREDIENTS\n"
+                                                 
+                                                 "1/2 cup quick-cooking rolled oats\n"
+                                                 "Coarse salt and ground pepper\n"
+                                                 "Nonstick cooking spray\n"
+                                                 "1 large egg\n"
+                                                 "2 tablespoons shredded sharp cheddar\n"
+                                                 "1 tablespoon thinly sliced scallion greens\n\n"
+                                                 
+                                                 
+                                                 "DIRECTIONS\n"
+                                                 "1.	In a small saucepan, bring 1 cup water to a boil. Add oats and pinch of salt; stir, reduce heat, and simmer until tender, about 5 minutes. Meanwhile, heat a small nonstick pan over medium. Coat lightly with cooking spray. Add egg and cook until white is set and yolk is still runny, about 3 minutes. Season egg to taste with salt and pepper. Serve oatmeal in a bowl topped with cheese, egg, and scallion greens."];
+    
+    NATRecipe *savoryOatsWithBrieAndCherryTomatoes = [[NATRecipe alloc]initWithIngredients:@[@"olive oil", @"shallots", @"cherry tomatoes", @"salt", @"oats", @"garlic", @"brie", @"basil", @"pine nuts"] recipeImage:[UIImage imageNamed:@"oatmealRecipe4"] label:@"Savory Oats with Brie and Cherry Tomatoes" recipePreparation:@"2 tsp. olive oil or butter\n"
+                                                      "1 shallot, chopped\n"
+                                                      "2 cups cherry tomatoes, halved\n"
+                                                      "1/2 tsp. salt, optional\n"
+                                                      "2 cups old-fashioned rolled oats\n"
+                                                      "1 clove garlic, minced (1 tsp.)\n"
+                                                      "1 1/2 oz. Brie, cut into small cubes\n"
+                                                      "1/2 cup fresh basil leaves, torn\n"
+                                                      "1 Tbs. toasted pine nuts\n\n"
+                                                      "1. Heat oil in skillet over medium-high heat. Add shallot, tomatoes, and salt (if using). Cook 5 minutes, or until shallot has softened and tomatoes start releasing their juices. Add oats; cook 1 minute more.\n\n"
+                                                      "2. Stir in garlic and 4 cups water, and bring to a boil. Reduce heat to medium-low, and simmer, uncovered, 10 minutes. Remove from heat, and dot with Brie. Sprinkle with basil and pine nuts.\n"];
+    NATRecipe *oatmealWithSquashAndSpinach = [[NATRecipe alloc]initWithIngredients:@[@"oats", @"water", @"broth", @"butternut squash", @"spinach", @"rosemary", @"fried egg", @"salt", @"black pepper"] recipeImage:[UIImage imageNamed:@"oatmealRecipe5"] label:@"Oatmeal with Squash and Spinach" recipePreparation:@"Ingredients\n"
+                                              "1/2 cup rolled oats\n"
+                                              "1 cup water (or broth)\n"
+                                              "1/4 cup cubed and roasted butternut squash or sweet potatoes\n"
+                                              "1/4 cup chopped spinach\n"
+                                              "1 teaspoon rosemary (or other spice of choice)\n"
+                                              "1 fried egg (optional)\n"
+                                              "salt and pepper, to taste\n\n"
+                                              "Instructions\n"
+                                              "1.	Boil water (or broth) with oats in a small saucepan, stirring occasionally until thick and creamy.\n"
+                                              "2.	Stir in chopped spinach while in saucepan.\n"
+                                              "3.	Take off heat and add squash, spices, and salt and pepper to taste.\n"
+                                              "4.	Top with fried egg, if desired, and serve warm.\n"];
+    self.breakfastRecipeArray = @[avocadoToast, eggInAvocado, avocadoBreakfastPudding, blackBeanEggAndAvocadoWrap, smokedSalmonAvocadoToast, berryBreakfastQuinoa, rawVeganBlueberryCoconutBreakfastShake, rawRaspberryBreakfastBar, breakfastBerrySmoothieWithCacaoDrizzleAndChia, ultimateBlueberryAndBananaBreakfastSmoothie, eggsWithSpinachAndCremeFraiche, poachedEggsWithRoastedTomatoes, watercressWithGarlicAndScrambledEggs, hardBoiledEggsWithAvocado, avocadosYHuevosCaliente, kaleAvocadoSalad, auntyPsKaleSalad, kaleSaladWithBloodOrangeAndMeyerLemon, garlickyKaleWithFriedEggsAndSalsa, kaleBerryAndAcaiPowerSmoothie, oatmealCasserole, oatmealWithBananaAndWalnuts, savoryOatmealWithSoftCookedEgg, savoryOatsWithBrieAndCherryTomatoes, oatmealWithSquashAndSpinach];
     
     self.filteredBreakfastRecipeArray = self.breakfastRecipeArray;
     
-
     
     
     
     
     
-   
+    
+    
     
     [self.collectionView reloadData];
 }
 
-- (void)viewWillDisappear:(BOOL)animated
+-(void)viewWillAppear:(BOOL)animated
 {
-    [super viewWillDisappear:animated];
-    if (self.isMovingFromParentViewController) {
-        NSLog(@"back is being pressed");
-            }
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO];
+
 }
+
 
 -(void)setCurrentFilterString:(NSString *)currentFilterString
 {
-
+    
     if ([currentFilterString isEqualToString:_currentFilterString ]) {
         return;
     }
     
     _currentFilterString = currentFilterString;
-
+    
     if (currentFilterString.length < 1) {
         self.filteredBreakfastRecipeArray = self.breakfastRecipeArray;
-    
+        
     } else {
         NSMutableArray *newFilteredArray = [NSMutableArray array];
         
@@ -282,18 +375,18 @@ static NSString *const kNATRecipeCellIdentifier = @"kNATRecipeCellIdentifier";
                 
                 //note: was previously using containsString, but this only works in iOS8 (will crash in iOS 7 and below)
                 if([ingredient rangeOfString:currentFilterString options:NSCaseInsensitiveSearch].location != NSNotFound){
-
+                    
                     [newFilteredArray addObject:recipe];
-
+                    
                     return ;
                 }
             }
         }];
         
         self.filteredBreakfastRecipeArray = [NSArray arrayWithArray:newFilteredArray];
-
+        
     }
-        [self.collectionView reloadData];
+    [self.collectionView reloadData];
 }
 
 #pragma mark - Table View Methods
@@ -339,14 +432,14 @@ static NSString *const kNATRecipeCellIdentifier = @"kNATRecipeCellIdentifier";
         destinationViewController.recipeLabeltext = recipe.label;
         destinationViewController.recipeImageImage = recipe.recipeImage;
     }
-
+    
 }
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
 {
     if (searchText.length > 2) {
         self.currentFilterString = [searchText lowercaseString];
-            } else {
+    } else {
         self.currentFilterString = nil;
     }
 }

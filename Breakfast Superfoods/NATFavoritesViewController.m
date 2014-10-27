@@ -36,6 +36,8 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO];
+
     //this needs to be called near the top of the method to immediately catch deletion in the detail view (when navigated to using the back button)
     [self.collectionView reloadData];
     NSLog(@"ViewWillAppear getting called");
