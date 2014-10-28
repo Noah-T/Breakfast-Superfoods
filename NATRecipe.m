@@ -23,14 +23,18 @@
     return self;
 }
 
-
+//note: all properties added to recipe must be encoded here
 - (void)encodeWithCoder:(NSCoder *)aCoder
 {
     [aCoder encodeObject:self.ingredients forKey:@"ingredients"];
     [aCoder encodeObject:UIImagePNGRepresentation(self.recipeImage) forKey:@"recipeImage"];
     [aCoder encodeObject:self.label forKey:@"label"];
+    [aCoder encodeObject:self.recipePreparation forKey:@"recipePreparation"];
     
 }
+
+//note: all properties added to recipe must be decoded here
+
 - (id)initWithCoder:(NSCoder *)aDecoder // NS_DESIGNATED_INITIALIZER
 {
     self = [super init];
@@ -38,6 +42,7 @@
     _ingredients = [aDecoder decodeObjectForKey:@"ingredients"];
     _recipeImage = [UIImage imageWithData:[aDecoder decodeObjectForKey:@"recipeImage"]];
     _label = [aDecoder decodeObjectForKey:@"label"];
+    _recipePreparation = [aDecoder decodeObjectForKey:@"recipePreparation"];
     
     return self;
 }

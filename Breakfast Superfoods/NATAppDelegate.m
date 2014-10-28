@@ -22,8 +22,9 @@
     [self.window makeKeyAndVisible];
     NSLog(@"root view controller has a value of %@", self.window.rootViewController);*/
     UINavigationBar *navigationAppearance = [UINavigationBar appearance];
-    [navigationAppearance setBarTintColor:[UIColor colorWithRed:1 green:1 blue:0.341 alpha:1] /*#ffff57*/
-]; /*#f5d83c*/
+    [navigationAppearance setBarTintColor:[UIColor colorWithRed:1 green:1 blue:0.341 alpha:0.7] /*#ffff57*/
+];
+   
 
     return YES;
    

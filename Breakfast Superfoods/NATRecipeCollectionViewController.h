@@ -10,4 +10,6 @@
 
 @interface NATRecipeCollectionViewController : UIViewController
 
+@property (strong, nonatomic) NSArray *breakfastRecipeArray;
+
 @end

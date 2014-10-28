@@ -17,6 +17,10 @@
 @property (nonatomic, strong) IBOutlet UIImageView *recipeImage;
 @property (nonatomic, strong) UIImage *recipeImageImage;
 @property (nonatomic, strong) NATRecipe *recipe;
+@property (strong, nonatomic) NATRecipe *featuredRecipe;
+@property (strong, nonatomic) IBOutlet UIButton *saveButton;
+
+
 @property (weak, nonatomic) IBOutlet UITextView *recipePreparationField;
 
 

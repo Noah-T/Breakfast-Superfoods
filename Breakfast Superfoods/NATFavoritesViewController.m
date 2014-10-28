@@ -83,7 +83,7 @@
 {
     NATFavoritesCollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
     NATRecipe *recipe = [self.filteredBreakfastRecipeArray objectAtIndex:indexPath.row];
-    cell.label.text = [NSString stringWithFormat:@" %@ : %@", recipe.label, recipe.ingredients[0]] ;
+    cell.label.text =  recipe.label ;
     cell.imageViewForFavorites.image = recipe.recipeImage;
     
     NSLog(@"recipe image has a class of: %@", [recipe.recipeImage class]);
@@ -146,13 +146,14 @@
     if ([segue.identifier  isEqualToString:@"favoritesLargeRecipeView"]) {
         NSLog(@"button pressed");
         NSArray *indexPaths = [self.collectionView indexPathsForSelectedItems];
-        NATFavoritesLargeRecipeViewController *destinationViewController = segue.destinationViewController;
+        NATLargeRecipeViewController *destinationViewController = (NATLargeRecipeViewController *)segue.destinationViewController;
         NSIndexPath *indexPath = [indexPaths objectAtIndex:0]; //the first selected item
         
         NATRecipe *recipe = self.filteredBreakfastRecipeArray[indexPath.row] ;
         destinationViewController.recipe = recipe;
         destinationViewController.recipeLabeltext = recipe.label;
         destinationViewController.recipeImageImage = recipe.recipeImage;
+        destinationViewController.recipe.recipePreparation = recipe.recipePreparation;
     }
     
 }

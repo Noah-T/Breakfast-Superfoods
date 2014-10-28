@@ -15,7 +15,6 @@
 		DE2F11A319CBB50000432CB8 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE2F11A219CBB50000432CB8 /* Property List.plist */; };
 		DE5053E719F5ACF7008AA05E /* NATNoFavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5053E619F5ACF7008AA05E /* NATNoFavoritesViewController.m */; };
 		DE6BDF2319EDB75D00045257 /* NATHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6BDF2219EDB75D00045257 /* NATHomeViewController.m */; };
-		DE6BDF2619EDC14800045257 /* NATFavoritesLargeRecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6BDF2519EDC14800045257 /* NATFavoritesLargeRecipeViewController.m */; };
 		DE91A9E619CC83FB00EE8AD8 /* NATRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = DE91A9E519CC83FB00EE8AD8 /* NATRecipe.m */; };
 		DE91A9E919CCC3AB00EE8AD8 /* NATLargeRecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE91A9E819CCC3AB00EE8AD8 /* NATLargeRecipeViewController.m */; };
 		DEBDE1BD19D1DE200005C99A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBDE1BC19D1DE200005C99A /* Social.framework */; };
@@ -28,12 +27,20 @@
 		DED7D42C19C0D35300AA2AE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DED7D42A19C0D35300AA2AE0 /* InfoPlist.strings */; };
 		DED7D42E19C0D35300AA2AE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DED7D42D19C0D35300AA2AE0 /* main.m */; };
 		DED7D43219C0D35300AA2AE0 /* NATAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DED7D43119C0D35300AA2AE0 /* NATAppDelegate.m */; };
-		DED7D43419C0D35300AA2AE0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED7D43319C0D35300AA2AE0 /* Images.xcassets */; };
 		DED7D43B19C0D35300AA2AE0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED7D43A19C0D35300AA2AE0 /* XCTest.framework */; };
 		DED7D43C19C0D35300AA2AE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED7D42119C0D35300AA2AE0 /* Foundation.framework */; };
 		DED7D43D19C0D35300AA2AE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED7D42519C0D35300AA2AE0 /* UIKit.framework */; };
 		DED7D44519C0D35300AA2AE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DED7D44319C0D35300AA2AE0 /* InfoPlist.strings */; };
 		DED7D44719C0D35300AA2AE0 /* Breakfast_SuperfoodsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DED7D44619C0D35300AA2AE0 /* Breakfast_SuperfoodsTests.m */; };
+		DEEDB63D19FF090800165664 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = DEEDB63219FF090800165664 /* Contents.json */; };
+		DEEDB63E19FF090800165664 /* final-splash-screen-01.png in Resources */ = {isa = PBXBuildFile; fileRef = DEEDB63319FF090800165664 /* final-splash-screen-01.png */; };
+		DEEDB63F19FF090800165664 /* final-splash-screen-01 19-11-08-270.png in Resources */ = {isa = PBXBuildFile; fileRef = DEEDB63419FF090800165664 /* final-splash-screen-01 19-11-08-270.png */; };
+		DEEDB64019FF090800165664 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = DEEDB63619FF090800165664 /* Contents.json */; };
+		DEEDB64119FF090800165664 /* final-splash-screen-01.png in Resources */ = {isa = PBXBuildFile; fileRef = DEEDB63719FF090800165664 /* final-splash-screen-01.png */; };
+		DEEDB64219FF090800165664 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = DEEDB63919FF090800165664 /* Contents.json */; };
+		DEEDB64319FF090800165664 /* final-launch-image-01.png in Resources */ = {isa = PBXBuildFile; fileRef = DEEDB63A19FF090800165664 /* final-launch-image-01.png */; };
+		DEEDB64419FF090800165664 /* final-splash-screen-01.png in Resources */ = {isa = PBXBuildFile; fileRef = DEEDB63B19FF090800165664 /* final-splash-screen-01.png */; };
+		DEEDB64619FF0A2900165664 /* Images 19-11-33-249 19-17-37-443.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEEDB64519FF0A2900165664 /* Images 19-11-33-249 19-17-37-443.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +68,6 @@
 		DE5053E619F5ACF7008AA05E /* NATNoFavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NATNoFavoritesViewController.m; path = ../NATNoFavoritesViewController.m; sourceTree = "<group>"; };
 		DE6BDF2119EDB75D00045257 /* NATHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NATHomeViewController.h; path = ../NATHomeViewController.h; sourceTree = "<group>"; };
 		DE6BDF2219EDB75D00045257 /* NATHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NATHomeViewController.m; path = ../NATHomeViewController.m; sourceTree = "<group>"; };
-		DE6BDF2419EDC14800045257 /* NATFavoritesLargeRecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NATFavoritesLargeRecipeViewController.h; sourceTree = "<group>"; };
-		DE6BDF2519EDC14800045257 /* NATFavoritesLargeRecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NATFavoritesLargeRecipeViewController.m; sourceTree = "<group>"; };
 		DE91A9E419CC83FB00EE8AD8 /* NATRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NATRecipe.h; path = ../NATRecipe.h; sourceTree = "<group>"; };
 		DE91A9E519CC83FB00EE8AD8 /* NATRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NATRecipe.m; path = ../NATRecipe.m; sourceTree = "<group>"; };
 		DE91A9E719CCC3AB00EE8AD8 /* NATLargeRecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NATLargeRecipeViewController.h; sourceTree = "<group>"; };
@@ -83,12 +88,20 @@
 		DED7D42F19C0D35300AA2AE0 /* Breakfast Superfoods-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Breakfast Superfoods-Prefix.pch"; sourceTree = "<group>"; };
 		DED7D43019C0D35300AA2AE0 /* NATAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NATAppDelegate.h; sourceTree = "<group>"; };
 		DED7D43119C0D35300AA2AE0 /* NATAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NATAppDelegate.m; sourceTree = "<group>"; };
-		DED7D43319C0D35300AA2AE0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DED7D43919C0D35300AA2AE0 /* Breakfast SuperfoodsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Breakfast SuperfoodsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED7D43A19C0D35300AA2AE0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		DED7D44219C0D35300AA2AE0 /* Breakfast SuperfoodsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Breakfast SuperfoodsTests-Info.plist"; sourceTree = "<group>"; };
 		DED7D44419C0D35300AA2AE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DED7D44619C0D35300AA2AE0 /* Breakfast_SuperfoodsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Breakfast_SuperfoodsTests.m; sourceTree = "<group>"; };
+		DEEDB63219FF090800165664 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		DEEDB63319FF090800165664 /* final-splash-screen-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "final-splash-screen-01.png"; sourceTree = "<group>"; };
+		DEEDB63419FF090800165664 /* final-splash-screen-01 19-11-08-270.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "final-splash-screen-01 19-11-08-270.png"; sourceTree = "<group>"; };
+		DEEDB63619FF090800165664 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		DEEDB63719FF090800165664 /* final-splash-screen-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "final-splash-screen-01.png"; sourceTree = "<group>"; };
+		DEEDB63919FF090800165664 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		DEEDB63A19FF090800165664 /* final-launch-image-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "final-launch-image-01.png"; sourceTree = "<group>"; };
+		DEEDB63B19FF090800165664 /* final-splash-screen-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "final-splash-screen-01.png"; sourceTree = "<group>"; };
+		DEEDB64519FF0A2900165664 /* Images 19-11-33-249 19-17-37-443.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images 19-11-33-249 19-17-37-443.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,15 +166,12 @@
 		DED7D42719C0D35300AA2AE0 /* Breakfast Superfoods */ = {
 			isa = PBXGroup;
 			children = (
-				DED7D43319C0D35300AA2AE0 /* Images.xcassets */,
 				DED7D43019C0D35300AA2AE0 /* NATAppDelegate.h */,
 				DED7D43119C0D35300AA2AE0 /* NATAppDelegate.m */,
 				DE2F119F19CBA65D00432CB8 /* NATCollectionViewCell.h */,
 				DE2F11A019CBA65D00432CB8 /* NATCollectionViewCell.m */,
 				DED1AD3D19E3324300F2F082 /* NATFavoritesCollectionViewCell.h */,
 				DED1AD3E19E3324300F2F082 /* NATFavoritesCollectionViewCell.m */,
-				DE6BDF2419EDC14800045257 /* NATFavoritesLargeRecipeViewController.h */,
-				DE6BDF2519EDC14800045257 /* NATFavoritesLargeRecipeViewController.m */,
 				DED1AD3A19E3228B00F2F082 /* NATFavoritesViewController.h */,
 				DED1AD3B19E3228B00F2F082 /* NATFavoritesViewController.m */,
 				DE6BDF2119EDB75D00045257 /* NATHomeViewController.h */,
@@ -187,6 +197,12 @@
 		DED7D42819C0D35300AA2AE0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DEEDB64519FF0A2900165664 /* Images 19-11-33-249 19-17-37-443.xcassets */,
+				DEEDB63119FF090800165664 /* final-splash-screen-01.imageset */,
+				DEEDB63419FF090800165664 /* final-splash-screen-01 19-11-08-270.png */,
+				DEEDB63519FF090800165664 /* final-splash-screen-01-1.imageset */,
+				DEEDB63819FF090800165664 /* final-launch-image-01.imageset */,
+				DEEDB63B19FF090800165664 /* final-splash-screen-01.png */,
 				DED7D42919C0D35300AA2AE0 /* Breakfast Superfoods-Info.plist */,
 				DED7D42A19C0D35300AA2AE0 /* InfoPlist.strings */,
 				DED7D42D19C0D35300AA2AE0 /* main.m */,
@@ -211,6 +227,33 @@
 				DED7D44319C0D35300AA2AE0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DEEDB63119FF090800165664 /* final-splash-screen-01.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				DEEDB63219FF090800165664 /* Contents.json */,
+				DEEDB63319FF090800165664 /* final-splash-screen-01.png */,
+			);
+			path = "final-splash-screen-01.imageset";
+			sourceTree = "<group>";
+		};
+		DEEDB63519FF090800165664 /* final-splash-screen-01-1.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				DEEDB63619FF090800165664 /* Contents.json */,
+				DEEDB63719FF090800165664 /* final-splash-screen-01.png */,
+			);
+			path = "final-splash-screen-01-1.imageset";
+			sourceTree = "<group>";
+		};
+		DEEDB63819FF090800165664 /* final-launch-image-01.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				DEEDB63919FF090800165664 /* Contents.json */,
+				DEEDB63A19FF090800165664 /* final-launch-image-01.png */,
+			);
+			path = "final-launch-image-01.imageset";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,10 +335,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEEDB63D19FF090800165664 /* Contents.json in Resources */,
+				DEEDB64619FF0A2900165664 /* Images 19-11-33-249 19-17-37-443.xcassets in Resources */,
 				DED7D42C19C0D35300AA2AE0 /* InfoPlist.strings in Resources */,
-				DED7D43419C0D35300AA2AE0 /* Images.xcassets in Resources */,
+				DEEDB64419FF090800165664 /* final-splash-screen-01.png in Resources */,
+				DEEDB64119FF090800165664 /* final-splash-screen-01.png in Resources */,
+				DEEDB63E19FF090800165664 /* final-splash-screen-01.png in Resources */,
+				DEEDB64019FF090800165664 /* Contents.json in Resources */,
+				DEEDB64219FF090800165664 /* Contents.json in Resources */,
 				DE2F11A319CBB50000432CB8 /* Property List.plist in Resources */,
+				DEEDB64319FF090800165664 /* final-launch-image-01.png in Resources */,
 				DE2F119E19CBA26700432CB8 /* Storyboard.storyboard in Resources */,
+				DEEDB63F19FF090800165664 /* final-splash-screen-01 19-11-08-270.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +368,6 @@
 				DE91A9E919CCC3AB00EE8AD8 /* NATLargeRecipeViewController.m in Sources */,
 				DE2F119C19CBA12000432CB8 /* NATRecipeCollectionViewController.m in Sources */,
 				DE5053E719F5ACF7008AA05E /* NATNoFavoritesViewController.m in Sources */,
-				DE6BDF2619EDC14800045257 /* NATFavoritesLargeRecipeViewController.m in Sources */,
 				DED1AD3F19E3324300F2F082 /* NATFavoritesCollectionViewCell.m in Sources */,
 				DED1AD3C19E3228B00F2F082 /* NATFavoritesViewController.m in Sources */,
 				DE2F094819D727A300F0C8B0 /* NATUserDefaultInfo.m in Sources */,

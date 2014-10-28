@@ -11,7 +11,6 @@
 #import "NATUserDefaultInfo.h"
 #import "NATRecipe.h"
 @interface NATLargeRecipeViewController ()
-@property (strong, nonatomic) IBOutlet UIButton *saveButton;
 
 @end
 
@@ -30,6 +29,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.automaticallyAdjustsScrollViewInsets = NO;
+
     
 
     
@@ -38,9 +39,13 @@
 - (void) viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    NSLog(@"content inset is: %f", self.recipePreparationField.contentInset.top);
+    NSLog(@"view will appear being called");
+    [self.navigationController setNavigationBarHidden:NO];
     
     if ([self doesRecipeAlreadyExist:self.recipe]) {
         [self.saveButton setTitle:@"Remove" forState:UIControlStateNormal];
+        NSLog(@"yes, it exists");
     } else {
         [self.saveButton setTitle:@"Save" forState:UIControlStateNormal];
     }
@@ -48,15 +53,22 @@
     self.recipeLabel.text = self.recipeLabeltext;
     self.recipeImage.image = self.recipeImageImage;
     self.recipePreparationField.text = self.recipe.recipePreparation;
+
     
     [self.saveButton addTarget:self action:@selector(saveButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.recipePreparationField.contentOffset = CGPointMake(0,0);
+
 }
 
 
-- (void)didReceiveMemoryWarning
+-(void)viewDidAppear:(BOOL)animated
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [super viewDidAppear:animated];
+    self.recipePreparationField.contentOffset = CGPointMake(0,0);
+
+    NSLog(@"Yo");
+
 }
 
 /*
@@ -74,8 +86,11 @@
     NSLog(@"twitter button pressed");
     if([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]){
         SLComposeViewController *twitterViewController =[SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
-        [twitterViewController setInitialText:self.recipeLabeltext];
+        [twitterViewController setInitialText:[NSString stringWithFormat:@"Yum! Great recipe for %@ from Breakfast Superfoods [link to app]", self.recipeLabeltext]];
         [self presentViewController:twitterViewController animated:YES completion:nil];
+    } else {
+        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Oops!" message:@"Twitter account not found. Log in by going to settings, and then Twitter."  delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [alertView show];
     }
 }
 
@@ -83,21 +98,23 @@
     
     if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]){
         SLComposeViewController *facebookViewController = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
-        [facebookViewController setInitialText:self.recipeLabeltext];
+        [facebookViewController setInitialText:[NSString stringWithFormat:@"Yum! Great recipe for %@ from Breakfast Superfoods [link to app]", self.recipeLabeltext]];
         [self presentViewController:facebookViewController animated:YES completion:nil];
     }else {
         NSLog(@"Facebook account not found");
         //need to flesh this out
+        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Oops!" message:@"Facebook account not found. Log in by going to settings, and then Facebook."  delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [alertView show];
     }
     
 }
 
 - (IBAction)sendEmail:(id)sender {
-    NSArray *toRecepients = @[@"nteshu@gmail.com"];
+    NSArray *toRecepients = @[@""];
     MFMailComposeViewController *mailViewController = [[MFMailComposeViewController alloc]init];
     mailViewController.mailComposeDelegate = self;
     [mailViewController setSubject:self.recipeLabeltext];
-    [mailViewController setMessageBody:@"Here's a yummy recipe!" isHTML:YES];
+    [mailViewController setMessageBody:[NSString stringWithFormat:@"%@ \n\n %@",self.recipe.label, self.recipe.recipePreparation] isHTML:NO];
     [mailViewController setToRecipients:toRecepients];
     
     [self presentViewController:mailViewController animated:YES completion:nil];
@@ -108,20 +125,32 @@
     switch (result)
     {
         case MFMailComposeResultCancelled:
+        {
             NSLog(@"Mail cancelled");
             break;
+        }
         case MFMailComposeResultSaved:
+        {
             NSLog(@"Mail saved");
             break;
+        }
         case MFMailComposeResultSent:
+        {
             NSLog(@"Mail sent");
-            
+            UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"" message:@"Email sent."  delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+            [alertView show];
             //need to add a confirmation message here
             break;
+        }
         case MFMailComposeResultFailed:
+        {
             NSLog(@"Mail sent failure: %@", [error localizedDescription]);
+            UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Oops!" message:@"The email failed to send. Please try again." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+            [alertView show];
             break;
-        default:
+        }
+            
+            default:
             break;
     }
     
